@@ -21,14 +21,14 @@ steps:
   with:
     repetitions: 1
     iosizes: ['512']
-    iodepths: [1, 2, 4, 8]
+    iodepths: [1, 2]
 
 - name: fio
   uses: fioe
   with:
     repetitions: 1
     iosizes: ['512']
-    iodepths: [1, 2, 4, 8]
+    iodepths: [1, 2]
 
 - name: plot_fio
   uses: plot

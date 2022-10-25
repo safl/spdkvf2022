@@ -1,0 +1,8 @@
+begin: 1666713503.8308997
+cmd: git --version
+cwd: None
+elapsed: 0.7679531574249268
+end: 1666713504.5988529
+err: 0
+output_dpath: mickey/001_prep_repos
+output_fpath: mickey/001_prep_repos/cmd_01.output

@@ -1,0 +1,8 @@
+begin: 1666727631.1085894
+cmd: cat /tmp/fio-output_4K_8_libaio-reference_0.txt
+cwd: None
+elapsed: 0.780418872833252
+end: 1666727631.8890083
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_363.output

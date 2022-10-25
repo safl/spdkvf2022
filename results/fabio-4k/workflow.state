@@ -1,0 +1,92 @@
+config: {}
+doc: "Produce, transform and plot fio-output\n======================================\n\
+  \nThis workflow assumes that the 'prep.workflow' has completed.\nThe comparison\
+  \ and plots consists of\n\n  * bandwidth in KiB / seconds\n  * latency is mean and\
+  \ in nano-seconds\n  * IOPS are 'raw' / base-unit\n\nThe above in a bar-plot at\
+  \ iodepth=1, and a line-plot as a function of iodepth.\n\nSee Artifacts for the\
+  \ generated plots"
+status:
+  elapsed: 3058.0394191741943
+  failed: 0
+  passed: 4
+  skipped: 0
+  started: 1666724735.1927373
+steps:
+- description: "\n    Run fio...\n"
+  id: 001_bdevperf
+  name: bdevperf
+  nr: 1
+  status:
+    elapsed: 1166.063898563385
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: bdevperf
+  with:
+    iodepths:
+    - 1
+    - 2
+    - 4
+    - 8
+    iosizes:
+    - 4K
+    repetitions: 3
+- description: "\n    Run fio...\n"
+  id: 002_fio
+  name: fio
+  nr: 2
+  status:
+    elapsed: 1890.7196505069733
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: fioe
+  with:
+    iodepths:
+    - 1
+    - 2
+    - 4
+    - 8
+    iosizes:
+    - 4K
+    repetitions: 3
+- description: "\n    Extract and transform fio and bdevperf output\n    =============================================\n\
+    \n    fio has:\n\n    * bandwidth in KiB / second\n    * latency is mean and in\
+    \ nano-seconds\n    * IOPS are 'raw' / base-unit\n\n    bdevperf has:\n\n    *\
+    \ bandwidth in MiB / second\n    * IOPS are 'raw' / base-unit\n\n    NOTE: The\
+    \ metric-context need addition of backend-options, the options are\n    semi-encoded\
+    \ by ioengine and 'label', however, that is not very precise.\n"
+  id: 003_plot_fio
+  name: plot_fio
+  nr: 3
+  status:
+    elapsed: 0.7708134651184082
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: plot
+  with:
+    path: cijoe-output
+    tool: fio
+- description: "\n    Extract and transform fio and bdevperf output\n    =============================================\n\
+    \n    fio has:\n\n    * bandwidth in KiB / second\n    * latency is mean and in\
+    \ nano-seconds\n    * IOPS are 'raw' / base-unit\n\n    bdevperf has:\n\n    *\
+    \ bandwidth in MiB / second\n    * IOPS are 'raw' / base-unit\n\n    NOTE: The\
+    \ metric-context need addition of backend-options, the options are\n    semi-encoded\
+    \ by ioengine and 'label', however, that is not very precise.\n"
+  id: 004_plot_bdevperf
+  name: plot_bdevperf
+  nr: 4
+  status:
+    elapsed: 0.48505663871765137
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: plot
+  with:
+    path: cijoe-output
+    tool: bdevperf

@@ -1,0 +1,8 @@
+begin: 1666724929.6761372
+cmd: rm /tmp/spdk_bdev_xnvme_io_uring_cmd.conf || true
+cwd: None
+elapsed: 0.7932009696960449
+end: 1666724930.4693382
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/001_bdevperf/cmd_31.output

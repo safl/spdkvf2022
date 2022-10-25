@@ -1,0 +1,8 @@
+begin: 1666724981.4824424
+cmd: rm /tmp/spdk_bdev_uring_foo.conf || true
+cwd: None
+elapsed: 0.7807235717773438
+end: 1666724982.263166
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/001_bdevperf/cmd_39.output

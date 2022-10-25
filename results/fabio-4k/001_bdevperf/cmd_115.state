@@ -1,0 +1,8 @@
+begin: 1666725862.2352889
+cmd: rm /tmp/spdk_bdev_xnvme_libaio.conf || true
+cwd: None
+elapsed: 0.7849881649017334
+end: 1666725863.020277
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/001_bdevperf/cmd_115.output

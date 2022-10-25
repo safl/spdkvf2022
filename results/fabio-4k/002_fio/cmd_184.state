@@ -1,0 +1,8 @@
+begin: 1666726775.8299632
+cmd: rm /tmp/fio-output_4K_2_libaio-bdev_xnvme_1.txt
+cwd: None
+elapsed: 0.7891864776611328
+end: 1666726776.6191497
+err: 1
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_184.output

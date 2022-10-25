@@ -1,0 +1,8 @@
+begin: 1666727103.1762161
+cmd: cat /tmp/fio-output_4K_4_io_uring-bdev_xnvme_2.txt
+cwd: None
+elapsed: 0.7970378398895264
+end: 1666727103.973254
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_252.output

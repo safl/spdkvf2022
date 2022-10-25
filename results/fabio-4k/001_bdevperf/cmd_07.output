@@ -1,0 +1,1 @@
+rm: cannot remove '/tmp/spdk_bdev_uring_foo.conf': No such file or directory

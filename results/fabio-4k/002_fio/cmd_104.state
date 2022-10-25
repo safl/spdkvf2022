@@ -1,0 +1,11 @@
+begin: 1666726388.4321644
+cmd: /opt/fio/bin/fio --name="io_uring_cmd-reference" --rw="randread" --size="12G"
+  --iodepth="2" --bs="4K" --direct="0" --thread="1" --time_based="1" --runtime="7"
+  --ramp_time="3" --norandommap="1" --allow_file_create="0" --ioengine="io_uring_cmd"
+  --filename="/dev/ng0n1" --output-format="normal,json" --output="/tmp/fio-output_4K_2_io_uring_cmd-reference_1.txt"
+cwd: None
+elapsed: 11.038004875183105
+end: 1666726399.4701693
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_104.output

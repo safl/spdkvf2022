@@ -1,0 +1,9 @@
+begin: 1666713505.3725302
+cmd: '[ ! -d /root/git/liburing ] && git clone https://github.com/axboe/liburing.git
+  /root/git/liburing --recursive'
+cwd: None
+elapsed: 0.7694318294525146
+end: 1666713506.141962
+err: 1
+output_dpath: mickey/001_prep_repos
+output_fpath: mickey/001_prep_repos/cmd_03.output

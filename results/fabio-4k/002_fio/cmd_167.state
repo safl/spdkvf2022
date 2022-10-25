@@ -1,0 +1,11 @@
+begin: 1666726687.8861325
+cmd: /opt/fio/bin/fio --name="libaio-reference" --rw="randread" --size="12G" --iodepth="2"
+  --bs="4K" --direct="1" --thread="1" --time_based="1" --runtime="7" --ramp_time="3"
+  --norandommap="1" --allow_file_create="0" --ioengine="libaio" --filename="/dev/nvme0n1"
+  --output-format="normal,json" --output="/tmp/fio-output_4K_2_libaio-reference_1.txt"
+cwd: None
+elapsed: 11.079588413238525
+end: 1666726698.965721
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_167.output

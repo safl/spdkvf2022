@@ -1,0 +1,1 @@
+rm: cannot remove '/tmp/spdk_bdev_aio_foo.conf': No such file or directory

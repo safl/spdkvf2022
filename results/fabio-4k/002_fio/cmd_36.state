@@ -1,0 +1,8 @@
+begin: 1666726067.5289435
+cmd: cat /tmp/fio-output_4K_1_io_uring-reference_2.txt
+cwd: None
+elapsed: 0.7989840507507324
+end: 1666726068.3279276
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_36.output

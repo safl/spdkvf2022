@@ -1,0 +1,8 @@
+begin: 1666727790.2068746
+cmd: cat /tmp/fio-output_4K_8_libaio-xnvme_2.txt
+cwd: None
+elapsed: 0.7910661697387695
+end: 1666727790.9979408
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_396.output

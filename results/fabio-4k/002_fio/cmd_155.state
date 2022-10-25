@@ -1,0 +1,12 @@
+begin: 1666726633.294968
+cmd: /opt/fio/bin/fio --name="io_uring-xnvme" --rw="randread" --size="12G" --iodepth="2"
+  --bs="4K" --direct="1" --thread="1" --time_based="1" --runtime="7" --ramp_time="3"
+  --norandommap="1" --allow_file_create="0" --ioengine="external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so"
+  --xnvme_be="linux" --xnvme_async="io_uring" --xnvme_sync="nvme" --xnvme_admin="nvme"
+  --xnvme_dev_nsid="1" --filename="/dev/nvme0n1" --output-format="normal,json" --output="/tmp/fio-output_4K_2_io_uring-xnvme_0.txt"
+cwd: None
+elapsed: 11.063021183013916
+end: 1666726644.357989
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_155.output

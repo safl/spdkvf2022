@@ -1,0 +1,211 @@
+config: {}
+doc: 'Prepare a machine for SPDK Summit 2022
+
+  ======================================
+
+
+  This clones the required repositories, builds and installs'
+status:
+  elapsed: 4.234791994094849
+  failed: 7
+  passed: 0
+  skipped: 0
+  started: 1666713503.8256605
+steps:
+- description: "\nrepository_prep\n===============\n\nFor every key in the configuration\
+    \ which has a subkey named \"repository\", then\nfollowing is done:\n\n * git\
+    \ clone repository.remote                   # if ! exists(repository.path)\n *\
+    \ git checkout [repository.branch,repository.tag] # if repository.{branch,tag}\n\
+    \ * git pull --rebase                               # if repository.branch\n *\
+    \ git status\n\nThe intended usage of this worklet is to prepare a repositories\
+    \ in a recently\nprovisioned system. Such as a done by 'qemu.provision'.\n\nConfiguration\n\
+    -------------\n\nEnsure that the \"repository\" has sensible values for:\n\n*\
+    \ remote: url of the repository to clone\n\n* branch: name of the branch to check\
+    \ out and rebase\n* tag: name of the tag to check out\n\n* run_local: Optionally,\
+    \ set 'run_local' to True, in case the repos should just be\n  checked out locally,\
+    \ instead of on the remote.\n\nRetargetable: True\n------------------\n"
+  id: 001_prep_repos
+  name: prep_repos
+  nr: 1
+  status:
+    elapsed: 3.4260361194610596
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: core.repository_prep
+- description: '
+
+    cmdrunner
+
+    =========
+
+
+    Executes a list of commands in the given order. Note that multi-line commands
+    are not
+
+    support, each line or list of strings are treated as individual commands.
+
+
+    Retargetable: True
+
+    ------------------
+
+    '
+  id: 002_packages
+  name: packages
+  nr: 2
+  status:
+    elapsed: 0.48288583755493164
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: core.cmdrunner
+  with:
+    commands:
+    - cd /root/git/xnvme/ && ./toolbox/pkgs/debian-bullseye.sh
+- description: '
+
+    build fio
+
+    =========
+
+
+    Build fio in fio.repository.path, using prefix fio.build.prefix.
+
+
+    Retargetable: True
+
+    ------------------
+
+    '
+  id: 003_prep_fio
+  name: prep_fio
+  nr: 3
+  status:
+    elapsed: 0.03249931335449219
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: prep_fio
+- description: '
+
+    Build xNVMe from source
+
+    =======================
+
+
+    Step Args
+
+    ---------
+
+
+    step.with.xnvme_source:  path to xNVMe source (default: config.options.repository.path)
+
+
+    Retargetable: True
+
+    ------------------
+
+    '
+  id: 004_prep_xnvme
+  name: prep_xnvme
+  nr: 4
+  status:
+    elapsed: 0.03243756294250488
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: prep_xnvme
+- description: '
+
+    Build SPDK from source
+
+    =======================
+
+
+    Step Args
+
+    ---------
+
+
+    step.with.spdk_source:  path to SPDK source (default: config.options.repository.path)
+
+
+    Retargetable: True
+
+    ------------------
+
+    '
+  id: 005_prep_spdk
+  name: prep_spdk
+  nr: 5
+  status:
+    elapsed: 0.03303885459899902
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: prep_spdk
+- description: '
+
+    Build SPDK from source
+
+    =======================
+
+
+    Step Args
+
+    ---------
+
+
+    step.with.spdk_source:  path to SPDK source (default: config.options.repository.path)
+
+
+    Retargetable: True
+
+    ------------------
+
+    '
+  id: 006_prep_driver
+  name: prep_driver
+  nr: 6
+  status:
+    elapsed: 0.03134727478027344
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: core.cmdrunner
+  with:
+    commands:
+    - xnvme-driver || true
+    - xnvme-driver reset || true
+- description: '
+
+    collect Linux system information
+
+    ================================
+
+
+    Collects a bunch of information about the system kernel and hardware.
+
+
+    Retargetable: True
+
+    ------------------
+
+    '
+  id: 007_info
+  name: info
+  nr: 7
+  status:
+    elapsed: 0.1965470314025879
+    failed: 1
+    passed: 0
+    skipped: 0
+    started: 0.0
+  uses: linux.sysinfo

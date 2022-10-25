@@ -1,0 +1,8 @@
+begin: 1666726715.4345553
+cmd: rm /tmp/fio-output_4K_2_libaio-bdev_aio_0.txt
+cwd: None
+elapsed: 0.7796828746795654
+end: 1666726716.2142382
+err: 1
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_172.output

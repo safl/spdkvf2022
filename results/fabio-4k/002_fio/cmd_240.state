@@ -1,0 +1,8 @@
+begin: 1666727043.0025334
+cmd: cat /tmp/fio-output_4K_4_io_uring-bdev_uring_1.txt
+cwd: None
+elapsed: 0.7948098182678223
+end: 1666727043.7973433
+err: 0
+output_dpath: /home/safl/tdde/summit2022/cijoe-output/002_fio
+output_fpath: /home/safl/tdde/summit2022/cijoe-output/002_fio/cmd_240.output

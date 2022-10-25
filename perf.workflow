@@ -22,6 +22,7 @@ steps:
     repetitions: 3
     iosizes: ['512']
     iodepths: [1, 2, 4, 8]
+    cmd_prefix: 'taskset -c 0'
 
 - name: plot_bdevperf
   uses: plot
@@ -36,6 +37,7 @@ steps:
     repetitions: 3
     iosizes: ['512']
     iodepths: [1, 2, 4, 8]
+    cmd_prefix: 'taskset -c 0'
 
 - name: plot_fio
   uses: plot

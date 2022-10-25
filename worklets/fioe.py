@@ -13,6 +13,7 @@ def worklet_entry(args, cijoe, step):
     repetitions = step.get("with", {}).get("repetitions", 3)
     iosizes = step.get("with", {}).get("iosizes", ["4K"])
     iodepths = step.get("with", {}).get("iodepths", [1, 2, 4, 8])
+    cmd_prefix = step.get("with", {}).get("cmd_prefix", "")
 
     cdev = {"uri": "/dev/ng0n1", "nsid": 1, "labels": ["cdev"]}
     bdev = {"uri": "/dev/nvme0n1", "nsid": 1, "labels": ["bdev"]}
@@ -161,6 +162,7 @@ def worklet_entry(args, cijoe, step):
                 xnvme_opts=params["xnvme_opts"],
                 spdk_opts=params["spdk_opts"],
                 aux={"bs": str(bs), "iodepth": str(iodepth), "name": label},
+                prefix=cmd_prefix,
             )
     except Exception as exc:
         log.error(f"Something failed({exc})")

@@ -277,7 +277,10 @@ def lineplot(args, cijoe, step):
     with path.open() as jfd:
         data = json.load(jfd)
 
-    plot_attributes = dict_from_yamlfile(Path("plot-attributes.yaml"))
+    plot_attributes_path = Path(
+        step.get("with", {}).get("plot_attributes", "plot-attributes.yaml")
+    )
+    plot_attributes = dict_from_yamlfile(plot_attributes_path)
 
     groups = ["io_uring_cmd", "io_uring", "libaio"]
     x = "iodepth"
@@ -334,7 +337,10 @@ def barplot(args, cijoe, step):
     with path.open() as jfd:
         data = json.load(jfd)
 
-    plot_attributes = dict_from_yamlfile(Path("plot-attributes.yaml"))
+    plot_attributes_path = Path(
+        step.get("with", {}).get("plot_attributes", "plot-attributes.yaml")
+    )
+    plot_attributes = dict_from_yamlfile(plot_attributes_path)
 
     groups = ["io_uring_cmd", "io_uring", "libaio"]
     y = "iops"

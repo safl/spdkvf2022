@@ -31,7 +31,7 @@ def worklet_entry(args, cijoe, step):
     configure = " ".join(
         [
             "./configure",
-#            "--disable-tests",
+            #            "--disable-tests",
             "--disable-unit-tests",
             "--enable-lto",
             f"--with-fio={fio_repos['path']}" if fio_repos else "",

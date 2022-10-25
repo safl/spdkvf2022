@@ -146,7 +146,7 @@ def worklet_entry(args, cijoe, step):
                 "/root/git/spdk/test/bdev/bdevperf/bdevperf",
                 f"--json {spdk_conf_path}",
                 f"-q {iodepth}",
-                "-o 4096",
+                "-o {bs}",
                 "-w randread",
                 "-t 10",
                 "-m '[0]'",

@@ -23,6 +23,13 @@ steps:
     iosizes: ['512']
     iodepths: [1, 2, 4, 8]
 
+- name: plot_bdevperf
+  uses: plot
+  with:
+    path: cijoe-output
+    tool: bdevperf
+    plot_attributes: plot-attributes-512.yaml
+
 - name: fio
   uses: fioe
   with:
@@ -35,11 +42,4 @@ steps:
   with:
     path: cijoe-output
     tool: fio
-    plot_attributes: plot-attributes-512.yaml
-
-- name: plot_bdevperf
-  uses: plot
-  with:
-    path: cijoe-output
-    tool: bdevperf
     plot_attributes: plot-attributes-512.yaml

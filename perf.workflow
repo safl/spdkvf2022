@@ -19,16 +19,16 @@ steps:
 - name: bdevperf
   uses: bdevperf
   with:
-    repetitions: 1
+    repetitions: 3
     iosizes: ['512']
-    iodepths: [1, 2]
+    iodepths: [1, 2, 4, 8]
 
 - name: fio
   uses: fioe
   with:
-    repetitions: 1
+    repetitions: 3
     iosizes: ['512']
-    iodepths: [1, 2]
+    iodepths: [1, 2, 4, 8]
 
 - name: plot_fio
   uses: plot

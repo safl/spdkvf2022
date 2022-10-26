@@ -1,0 +1,9 @@
+begin: 1666743554.6805289
+cmd: /root/git/spdk/test/bdev/bdevperf/bdevperf --json /tmp/spdk_bdev_xnvme_io_uring.conf
+  -q 4 -o 512 -w randread -t 10 -m '[0]'
+cwd: None
+elapsed: 11.108688592910767
+end: 1666743565.7892175
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf/cmd_78.output

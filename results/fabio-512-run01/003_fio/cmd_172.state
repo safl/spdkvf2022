@@ -1,0 +1,8 @@
+begin: 1666744653.5630257
+cmd: rm /tmp/fio-output_512_2_libaio-bdev_aio_0.txt
+cwd: None
+elapsed: 0.792830228805542
+end: 1666744654.355856
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_172.output

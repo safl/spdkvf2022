@@ -166,8 +166,7 @@ def worklet_entry(args, cijoe, step):
                     "iodepth": str(iodepth),
                     "name": label,
                     "cpus_allowed": "1",
-                },
-                prefix=cmd_prefix,
+                }
             )
     except Exception as exc:
         log.error(f"Something failed({exc})")

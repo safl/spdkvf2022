@@ -1,0 +1,12 @@
+begin: 1666744798.7327921
+cmd: /opt/fio/bin/fio --name="io_uring_cmd-reference" --rw="randread" --size="12G"
+  --iodepth="4" --bs="512" --direct="0" --thread="1" --time_based="1" --runtime="7"
+  --ramp_time="3" --norandommap="1" --allow_file_create="0" --ioengine="io_uring_cmd"
+  --filename="/dev/ng0n1" --output-format="normal,json" --output="/tmp/fio-output_512_4_io_uring_cmd-reference_1.txt"
+  --cpus_allowed="1"
+cwd: None
+elapsed: 11.038516759872437
+end: 1666744809.771309
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_203.output

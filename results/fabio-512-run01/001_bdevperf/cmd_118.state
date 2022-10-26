@@ -1,0 +1,9 @@
+begin: 1666743813.9570987
+cmd: /root/git/spdk/test/bdev/bdevperf/bdevperf --json /tmp/spdk_bdev_xnvme_libaio.conf
+  -q 8 -o 512 -w randread -t 10 -m '[0]'
+cwd: None
+elapsed: 11.194416761398315
+end: 1666743825.1515155
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf/cmd_118.output

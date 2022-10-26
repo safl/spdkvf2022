@@ -1,0 +1,8 @@
+begin: 1666745426.137515
+cmd: rm /tmp/fio-output_512_8_io_uring-bdev_uring_0.txt
+cwd: None
+elapsed: 0.786327600479126
+end: 1666745426.9238427
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_334.output

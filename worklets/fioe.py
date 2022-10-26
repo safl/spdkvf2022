@@ -161,7 +161,12 @@ def worklet_entry(args, cijoe, step):
                 params["device"],
                 xnvme_opts=params["xnvme_opts"],
                 spdk_opts=params["spdk_opts"],
-                aux={"bs": str(bs), "iodepth": str(iodepth), "name": label},
+                aux={
+                    "bs": str(bs),
+                    "iodepth": str(iodepth),
+                    "name": label,
+                    "cpus_allowed": "1",
+                },
                 prefix=cmd_prefix,
             )
     except Exception as exc:

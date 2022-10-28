@@ -10,48 +10,13 @@ import traceback
 from itertools import product
 from pathlib import Path
 
-"""
-from cijoe.fio.wrapper import fio_fancy
-
-def spdk_opts_to_spdk_conf(spdk_opts, parent):
-
-    spdk_conf = {
-        "subsystems": [
-            {
-                "subsystem": "bdev",
-                "config": [
-                    {
-                        "params": spdk_opts["params"],
-                        "method": f"bdev_{spdk_opts['bdev']}_create",
-                    }
-                ],
-            }
-        ]
-    }
-
-    conf_filestem = "_".join(
-        [
-            "spdk",
-            "bdev",
-            spdk_opts["bdev"],
-            spdk_opts["params"].get("io_mechanism", "foo"),
-        ]
-    )
-
-    spdk_conf_path = Path(parent) / f"{conf_filestem}.conf"
-    with spdk_conf_path.open("w") as scpath:
-        json.dump(spdk_conf, scpath)
-
-    return conf_filestem, spdk_conf_path, spdk_conf
-
-"""
-
-
 def worklet_entry(args, cijoe, step):
 
     repetitions = step.get("with", {}).get("repetitions", 3)
     iosizes = step.get("with", {}).get("iosizes", ["4K"])
     iodepths = step.get("with", {}).get("iodepths", [1, 2, 4, 8])
+
+    ndevices = str(step.get("with", {}).get("ndevices", "1"))
     bdev_conf_root = step.get("with", {}).get("bdev_confs", "/tmp")
 
     iopaths = {
@@ -95,9 +60,14 @@ def worklet_entry(args, cijoe, step):
                 [
                     params["bdev_name"],
                     params["io_mechanism"],
-                    "1.conf",
+                    f"{ndevices}.conf",
                 ]
             )
+
+            env = {}
+            if "io_uring_cmd" in label:
+                env["XNVME_QUEUE_SQPOLL_AWQ"] = "1"
+                env["XNVME_QUEUE_SQPOLL_CPU"] = "1"
 
             # Run bdevperf
             command = [
@@ -109,7 +79,7 @@ def worklet_entry(args, cijoe, step):
                 "-t 10",
                 "-m '[0]'",
             ]
-            err, state = cijoe.run(" ".join(command))
+            err, state = cijoe.run(" ".join(command), env=env)
             if err:
                 log.error(f"failed: {state}")
 

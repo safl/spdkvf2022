@@ -1,7 +1,7 @@
 # Limits on plots, this is to ensure that different plots are visually comparable
 limits:
   barplot:
-    y_lim: [0, 185000]
+    y_lim: [0, 195000]
   lineplot:
     y_lim: [0, 1200000]
 

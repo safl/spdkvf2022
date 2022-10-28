@@ -53,7 +53,7 @@ IOPATHS = {
     },
     "xnvme_io_uring_cmd": {
         "bdev_name": "bdev_xnvme",
-        "io_mechanism": "io_uring",
+        "io_mechanism": "io_uring_cmd",
         "method": "bdev_xnvme_create",
     },
 }

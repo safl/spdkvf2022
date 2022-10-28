@@ -1,0 +1,109 @@
+Module                  Size  Used by
+virtio_pci             24576  0
+virtio_pci_legacy_dev    16384  1 virtio_pci
+virtio_pci_modern_dev    20480  1 virtio_pci
+virtio_ring            40960  1 virtio_pci
+virtio                 20480  1 virtio_pci
+vfio_pci               16384  0
+vfio_pci_core          73728  1 vfio_pci
+vfio_virqfd            16384  1 vfio_pci_core
+vfio_iommu_type1       40960  0
+vfio                   45056  3 vfio_pci_core,vfio_iommu_type1,vfio_pci
+msr                    16384  0
+intel_rapl_msr         20480  0
+intel_rapl_common      32768  1 intel_rapl_msr
+edac_mce_amd           40960  0
+kvm_amd               155648  0
+kvm                  1114112  1 kvm_amd
+irqbypass              16384  2 vfio_pci_core,kvm
+ghash_clmulni_intel    16384  0
+sha512_ssse3           49152  0
+sha512_generic         16384  1 sha512_ssse3
+snd_hda_codec_hdmi     77824  1
+snd_hda_intel          57344  0
+nouveau              2412544  1
+snd_intel_dspcfg       36864  1 snd_hda_intel
+snd_intel_sdw_acpi     20480  1 snd_intel_dspcfg
+snd_hda_codec         184320  2 snd_hda_codec_hdmi,snd_hda_intel
+video                  61440  1 nouveau
+aesni_intel           393216  0
+snd_hda_core          118784  3 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec
+drm_display_helper    217088  1 nouveau
+snd_hwdep              16384  1 snd_hda_codec
+libaes                 16384  1 aesni_intel
+cec                    61440  1 drm_display_helper
+snd_pcm               155648  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+crypto_simd            16384  1 aesni_intel
+drm_ttm_helper         16384  1 nouveau
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+snd_timer              45056  1 snd_pcm
+ttm                    90112  2 drm_ttm_helper,nouveau
+sp5100_tco             20480  0
+snd                   126976  6 snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_timer,snd_pcm
+ccp                   114688  1 kvm_amd
+rapl                   20480  0
+pcspkr                 16384  0
+wmi_bmof               16384  0
+drm_kms_helper        221184  2 drm_display_helper,nouveau
+soundcore              16384  1 snd
+k10temp                16384  0
+mxm_wmi                16384  1 nouveau
+joydev                 28672  0
+watchdog               45056  1 sp5100_tco
+sg                     45056  0
+rng_core               20480  1 ccp
+evdev                  24576  3
+button                 24576  1 nouveau
+acpi_cpufreq           32768  0
+drm                   651264  6 drm_kms_helper,drm_display_helper,drm_ttm_helper,ttm,nouveau
+fuse                  172032  1
+configfs               57344  1
+ip_tables              36864  0
+x_tables               57344  1 ip_tables
+autofs4                53248  2
+ext4                  950272  1
+crc32c_generic         16384  0
+crc16                  16384  1 ext4
+mbcache                16384  1 ext4
+jbd2                  167936  1 ext4
+sr_mod                 28672  0
+cdrom                  77824  1 sr_mod
+hid_generic            16384  0
+uas                    32768  0
+sd_mod                 69632  3
+usbhid                 65536  0
+usb_storage            81920  1 uas
+hid                   163840  2 usbhid,hid_generic
+nvme                   53248  0
+nvme_core             155648  1 nvme
+t10_pi                 16384  2 sd_mod,nvme_core
+crc64_rocksoft         20480  1 t10_pi
+igb                   266240  0
+xhci_pci               20480  0
+crc64                  20480  1 crc64_rocksoft
+r8169                  94208  0
+i2c_algo_bit           16384  2 igb,nouveau
+ahci                   49152  2
+crc_t10dif             20480  1 t10_pi
+crc32_pclmul           16384  0
+crct10dif_generic      16384  0
+realtek                36864  0
+crct10dif_pclmul       16384  1
+dca                    16384  1 igb
+libahci                49152  1 ahci
+crc32c_intel           24576  2
+mdio_devres            16384  1 r8169
+xhci_hcd              315392  1 xhci_pci
+crct10dif_common       16384  3 crct10dif_generic,crc_t10dif,crct10dif_pclmul
+ptp                    32768  1 igb
+libata                401408  2 libahci,ahci
+i2c_piix4              28672  0
+libphy                176128  3 r8169,mdio_devres,realtek
+pps_core               24576  1 ptp
+scsi_mod              282624  6 sd_mod,usb_storage,uas,libata,sg,sr_mod
+usbcore               339968  5 xhci_hcd,usbhid,usb_storage,xhci_pci,uas
+scsi_common            16384  6 scsi_mod,usb_storage,uas,libata,sg,sr_mod
+usb_common             20480  2 xhci_hcd,usbcore
+wmi                    36864  4 video,wmi_bmof,mxm_wmi,nouveau
+gpio_amdpt             20480  0
+gpio_generic           16384  1 gpio_amdpt

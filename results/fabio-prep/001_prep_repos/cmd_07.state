@@ -1,0 +1,8 @@
+begin: 1666946042.77911
+cmd: git status
+cwd: /root/git/liburing
+elapsed: 0.8725948333740234
+end: 1666946043.6517048
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_07.output

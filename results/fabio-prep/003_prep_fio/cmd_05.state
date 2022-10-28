@@ -1,0 +1,8 @@
+begin: 1666946101.8115652
+cmd: make install
+cwd: /root/git/fio
+elapsed: 0.9104189872741699
+end: 1666946102.7219841
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio/cmd_05.output

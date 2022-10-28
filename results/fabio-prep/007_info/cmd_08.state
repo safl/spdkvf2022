@@ -1,0 +1,8 @@
+begin: 1666946303.738631
+cmd: lslocks
+cwd: None
+elapsed: 0.815892219543457
+end: 1666946304.5545232
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_08.output

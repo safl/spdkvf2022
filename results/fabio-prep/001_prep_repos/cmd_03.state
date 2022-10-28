@@ -1,0 +1,9 @@
+begin: 1666946038.7636688
+cmd: '[ ! -d /root/git/liburing ] && git clone https://github.com/axboe/liburing.git
+  /root/git/liburing --recursive'
+cwd: None
+elapsed: 0.9199106693267822
+end: 1666946039.6835794
+err: 1
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_03.output

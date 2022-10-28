@@ -1,0 +1,6 @@
+Using default SPDK env in /root/git/spdk/lib/env_dpdk
+Using default DPDK in /root/git/spdk/dpdk/build
+Configuring ISA-L (logfile: /root/git/spdk/isa-l/spdk-isal.log)...done.
+Creating mk/config.mk...done.
+Creating mk/cc.flags.mk...done.
+Type 'make' to build.

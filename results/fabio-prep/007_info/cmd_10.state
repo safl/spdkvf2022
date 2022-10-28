@@ -1,0 +1,8 @@
+begin: 1666946305.399759
+cmd: lsmem
+cwd: None
+elapsed: 0.8132388591766357
+end: 1666946306.212998
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_10.output

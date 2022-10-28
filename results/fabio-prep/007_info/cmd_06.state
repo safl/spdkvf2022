@@ -1,0 +1,8 @@
+begin: 1666946302.097656
+cmd: lsblk
+cwd: None
+elapsed: 0.8184256553649902
+end: 1666946302.9160817
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_06.output

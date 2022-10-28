@@ -1,0 +1,8 @@
+begin: 1666946045.28464
+cmd: git fetch --all
+cwd: /root/git/xnvme
+elapsed: 1.8266642093658447
+end: 1666946047.1113043
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_10.output

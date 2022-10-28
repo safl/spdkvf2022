@@ -1,0 +1,1648 @@
+Build started at 2022-10-28T12:33:13.482659
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.63.0
+Source dir: /root/git/xnvme
+Build dir: /root/git/xnvme/builddir
+Build type: native build
+Project name: xnvme
+Project version: 0.6.0
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/git/xnvme/builddir/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the host machine: cc ld.bfd 2.35.2
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/git/xnvme/builddir/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the build machine: cc ld.bfd 2.35.2
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Message: host_machine.system: linux
+Running command: /usr/bin/cat /etc/os-release
+--- stdout ---
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpr9zvkgu_
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpr9zvkgu_/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpr9zvkgu_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-braces -Wno-missing-braces 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-braces: YES 
+Program python3 found: YES (/usr/bin/python3)
+Message: python.language_version: 3.9
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmptzcgzkfg
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmptzcgzkfg/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/blkzoned.h")
+          #error "Header 'linux/blkzoned.h' could not be found"
+         #endif
+        #else
+         #include <linux/blkzoned.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "linux/blkzoned.h" : YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/blkzoned.h")
+          #error "Header 'linux/blkzoned.h' could not be found"
+         #endif
+        #else
+         #include <linux/blkzoned.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "linux/blkzoned.h" : YES (cached)
+Configuring xnvme_config.h using configuration
+Dependency bash-completion skipped: feature bash_completion disabled
+Program cp found: YES (/usr/bin/cp)
+Run-time dependency threads found: YES
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Determining dependency 'fio' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion fio` -> 1
+
+CMake binary for 1 is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Did not find CMake 'cmake'
+Found CMake: NO
+CMake binary for machine 1 not found. Giving up.
+Run-time dependency fio found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency fio
+
+Executing subproject fio 
+
+Project name: fio
+Project version: 3.32
+C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the host machine: cc ld.bfd 2.35.2
+C compiler for the build machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the build machine: cc ld.bfd 2.35.2
+Build targets in project: 1
+Subproject fio finished.
+
+Dependency fio found: YES 3.32 (overridden)
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpx6cpt3kt
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpx6cpt3kt/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("setupapi.h")
+          #error "Header 'setupapi.h' could not be found"
+         #endif
+        #else
+         #include <setupapi.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /root/git/xnvme/builddir/meson-private/tmpx6cpt3kt/testfile.c:4:12: error: #error "Header 'setupapi.h' could not be found"
+    4 |           #error "Header 'setupapi.h' could not be found"
+      |            ^~~~~
+
+Has header "setupapi.h" : NO 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpezku9go1
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpezku9go1/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpezku9go1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library rt found: YES
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpoafzvyi5
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpoafzvyi5/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpoafzvyi5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lrt -Wl,--end-group 
+
+Code:
+ #include <time.h>
+#include <limits.h>
+
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &clock_gettime;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" with dependency -lrt: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpb8wqzx_r
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpb8wqzx_r/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("libaio.h")
+          #error "Header 'libaio.h' could not be found"
+         #endif
+        #else
+         #include <libaio.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "libaio.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpqg85jhvb
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpqg85jhvb/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpqg85jhvb/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -laio -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library aio found: YES
+Pkg-config binary for 1 is cached.
+Determining dependency 'liburing' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion liburing` -> 0
+2.2
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags liburing` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs liburing` -> 0
+-L/usr/lib -luring
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs liburing` -> 0
+-luring
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpgtdyiadw
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpgtdyiadw/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpgtdyiadw/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpopbzy_71
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpopbzy_71/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpopbzy_71/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/10/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/10/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/10/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency liburing found: YES 2.2
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpg607s4j8
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpg607s4j8/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("math.h")
+          #error "Header 'math.h' could not be found"
+         #endif
+        #else
+         #include <math.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "math.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpioa_8ajm
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpioa_8ajm/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpioa_8ajm/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Pkg-config binary for 1 is cached.
+Determining dependency 'openssl' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion openssl` -> 0
+1.1.1n
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags openssl` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs openssl` -> 0
+-L/usr/lib/x86_64-linux-gnu -lssl -lcrypto
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs openssl` -> 0
+-lssl -lcrypto
+Run-time dependency openssl found: YES 1.1.1n
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpg3gf3_0e
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpg3gf3_0e/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("dlfcn.h")
+          #error "Header 'dlfcn.h' could not be found"
+         #endif
+        #else
+         #include <dlfcn.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "dlfcn.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpvgg3geed
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpvgg3geed/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpvgg3geed/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpt4lopka3
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpt4lopka3/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("uuid/uuid.h")
+          #error "Header 'uuid/uuid.h' could not be found"
+         #endif
+        #else
+         #include <uuid/uuid.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "uuid/uuid.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpie7dqt4x
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpie7dqt4x/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpie7dqt4x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -luuid -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library uuid found: YES
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp5pbgj83t
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp5pbgj83t/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("numaif.h")
+          #error "Header 'numaif.h' could not be found"
+         #endif
+        #else
+         #include <numaif.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "numaif.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp762e2w_c
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp762e2w_c/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp762e2w_c/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lnuma -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library numa found: YES
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpvbcmh1k6
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpvbcmh1k6/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("execinfo.h")
+          #error "Header 'execinfo.h' could not be found"
+         #endif
+        #else
+         #include <execinfo.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "execinfo.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmput4au8ld
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmput4au8ld/testfile.c -o /root/git/xnvme/builddir/meson-private/tmput4au8ld/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lexecinfo -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lexecinfo
+collect2: error: ld returned 1 exit status
+
+Library execinfo found: NO
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpcz1f0xxj
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpcz1f0xxj/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/elf_common.h")
+          #error "Header 'sys/elf_common.h' could not be found"
+         #endif
+        #else
+         #include <sys/elf_common.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /root/git/xnvme/builddir/meson-private/tmpcz1f0xxj/testfile.c:4:12: error: #error "Header 'sys/elf_common.h' could not be found"
+    4 |           #error "Header 'sys/elf_common.h' could not be found"
+      |            ^~~~~
+
+Has header "sys/elf_common.h" : NO 
+Pkg-config binary for 1 is cached.
+Determining dependency 'spdk' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion spdk` -> 1
+
+CMake binary for 1 is cached as not found
+CMake binary for machine 1 not found. Giving up.
+Run-time dependency spdk found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency spdk
+
+Executing subproject spdk 
+
+Project name: spdk
+Project version: 22.09
+C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the host machine: cc ld.bfd 2.35.2
+C compiler for the build machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the build machine: cc ld.bfd 2.35.2
+Program python3 found: YES (/usr/bin/python3)
+Running command: /usr/bin/python3 -c from multiprocessing import cpu_count; print(cpu_count())
+--- stdout ---
+16
+
+--- stderr ---
+
+
+Message: Checking if generic platform (Apple Silicon)
+Message: Building ..
+Program make found: YES (/usr/bin/make)
+Running command: /usr/bin/make -j 16
+--- stdout ---
+make[1]: Nothing to be done for 'all'.
+ninja: Entering directory `/root/git/xnvme/subprojects/spdk/dpdk/build-tmp'
+[1/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_class.c.o
+[2/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_debug.c.o
+[3/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_hexdump.c.o
+[4/222] Compiling C object lib/librte_telemetry.a.p/telemetry_telemetry_data.c.o
+[5/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_config.c.o
+[6/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_launch.c.o
+[7/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_mcfg.c.o
+[8/222] Compiling C object lib/librte_telemetry.a.p/telemetry_telemetry_legacy.c.o
+[9/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_bus.c.o
+[10/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_interrupts.c.o
+[11/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_string_fns.c.o
+[12/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_devargs.c.o
+[13/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_lcore.c.o
+[14/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_log.c.o
+[15/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_memalloc.c.o
+[16/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_dev.c.o
+[17/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_timer.c.o
+[18/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_tailqs.c.o
+[19/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_memzone.c.o
+[20/222] Compiling C object lib/librte_telemetry.a.p/telemetry_telemetry.c.o
+[21/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_thread.c.o
+[22/222] Linking static target lib/librte_telemetry.a
+[23/222] Compiling C object lib/librte_eal.a.p/eal_common_rte_reciprocal.c.o
+[24/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_trace_points.c.o
+[25/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_cpuflags.c.o
+[26/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_fbarray.c.o
+[27/222] Linking target lib/librte_telemetry.so.22.2
+[28/222] Compiling C object lib/librte_eal.a.p/eal_common_malloc_elem.c.o
+[29/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_memory.c.o
+[30/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_dynmem.c.o
+[31/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_trace_ctf.c.o
+[32/222] Compiling C object lib/librte_eal.a.p/eal_common_rte_keepalive.c.o
+[33/222] Compiling C object lib/librte_eal.a.p/eal_common_hotplug_mp.c.o
+[34/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_trace.c.o
+[35/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_debug.c.o
+[36/222] Compiling C object lib/librte_eal.a.p/eal_common_malloc_mp.c.o
+[37/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_trace_utils.c.o
+[38/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_file.c.o
+[39/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_firmware.c.o
+[40/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_filesystem.c.o
+[41/222] Compiling C object lib/librte_eal.a.p/eal_common_rte_service.c.o
+[42/222] Compiling C object lib/librte_eal.a.p/eal_common_malloc_heap.c.o
+[43/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_unix_thread.c.o
+[44/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_unix_timer.c.o
+[45/222] Compiling C object lib/librte_eal.a.p/eal_unix_eal_unix_memory.c.o
+[46/222] Compiling C object lib/librte_eal.a.p/eal_unix_rte_thread.c.o
+[47/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_cpuflags.c.o
+[48/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_proc.c.o
+[49/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_log.c.o
+[50/222] Compiling C object lib/librte_eal.a.p/eal_common_rte_random.c.o
+[51/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_thread.c.o
+[52/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_lcore.c.o
+[53/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_alarm.c.o
+[54/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_timer.c.o
+[55/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_dev.c.o
+[56/222] Compiling C object lib/librte_eal.a.p/eal_x86_rte_cpuflags.c.o
+[57/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_vfio_mp_sync.c.o
+[58/222] Compiling C object lib/librte_eal.a.p/eal_x86_rte_hypervisor.c.o
+[59/222] Generating symbol file lib/librte_telemetry.so.22.2.p/librte_telemetry.so.22.2.symbols
+[60/222] Compiling C object lib/librte_eal.a.p/eal_x86_rte_spinlock.c.o
+[61/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_hugepage_info.c.o
+[62/222] Compiling C object lib/librte_eal.a.p/eal_x86_rte_cycles.c.o
+[63/222] Compiling C object lib/librte_eal.a.p/eal_x86_rte_power_intrinsics.c.o
+[64/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal.c.o
+[65/222] Compiling C object lib/librte_eal.a.p/eal_common_rte_malloc.c.o
+[66/222] Compiling C object lib/librte_ring.a.p/ring_rte_ring.c.o
+[67/222] Linking static target lib/librte_ring.a
+[68/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_interrupts.c.o
+[69/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_memalloc.c.o
+[70/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_memory.c.o
+[71/222] Compiling C object lib/librte_eal.a.p/eal_common_eal_common_options.c.o
+[72/222] Compiling C object lib/librte_mempool.a.p/mempool_rte_mempool_ops.c.o
+[73/222] Compiling C object lib/librte_mempool.a.p/mempool_rte_mempool_ops_default.c.o
+[74/222] Compiling C object lib/librte_eal.a.p/eal_linux_eal_vfio.c.o
+[75/222] Linking static target lib/librte_eal.a
+[76/222] Compiling C object lib/librte_mempool.a.p/mempool_mempool_trace_points.c.o
+[77/222] Compiling C object lib/net/libnet_crc_avx512_lib.a.p/net_crc_avx512.c.o
+[78/222] Linking static target lib/net/libnet_crc_avx512_lib.a
+[79/222] Compiling C object lib/librte_rcu.a.p/rcu_rte_rcu_qsbr.c.o
+[80/222] Compiling C object lib/librte_mbuf.a.p/mbuf_rte_mbuf_ptype.c.o
+[81/222] Linking static target lib/librte_rcu.a
+[82/222] Linking target lib/librte_eal.so.22.2
+[83/222] Compiling C object lib/librte_mbuf.a.p/mbuf_rte_mbuf_pool_ops.c.o
+[84/222] Compiling C object lib/librte_reorder.a.p/reorder_rte_reorder.c.o
+[85/222] Linking static target lib/librte_reorder.a
+[86/222] Compiling C object drivers/libtmp_rte_bus_pci.a.p/bus_pci_linux_pci_uio.c.o
+[87/222] Compiling C object lib/librte_meter.a.p/meter_rte_meter.c.o
+[88/222] Linking static target lib/librte_meter.a
+[89/222] Compiling C object lib/librte_net.a.p/net_rte_ether.c.o
+[90/222] Compiling C object lib/librte_mempool.a.p/mempool_rte_mempool.c.o
+[91/222] Compiling C object lib/librte_mbuf.a.p/mbuf_rte_mbuf_dyn.c.o
+[92/222] Linking static target lib/librte_mempool.a
+[93/222] Compiling C object lib/librte_net.a.p/net_rte_net_crc.c.o
+[94/222] Compiling C object lib/librte_net.a.p/net_rte_arp.c.o
+[95/222] Compiling C object lib/librte_net.a.p/net_rte_net.c.o
+[96/222] Compiling C object lib/librte_net.a.p/net_net_crc_sse.c.o
+[97/222] Linking static target lib/librte_net.a
+[98/222] Generating symbol file lib/librte_eal.so.22.2.p/librte_eal.so.22.2.symbols
+[99/222] Compiling C object lib/librte_ethdev.a.p/ethdev_ethdev_profile.c.o
+[100/222] Compiling C object lib/librte_ethdev.a.p/ethdev_rte_class_eth.c.o
+[101/222] Linking target lib/librte_ring.so.22.2
+[102/222] Compiling C object lib/librte_mbuf.a.p/mbuf_rte_mbuf.c.o
+[103/222] Compiling C object lib/librte_ethdev.a.p/ethdev_ethdev_trace_points.c.o
+[104/222] Linking static target lib/librte_mbuf.a
+[105/222] Linking target lib/librte_meter.so.22.2
+[106/222] Compiling C object lib/librte_ethdev.a.p/ethdev_ethdev_private.c.o
+[107/222] Compiling C object lib/librte_pci.a.p/pci_rte_pci.c.o
+[108/222] Compiling C object lib/librte_ethdev.a.p/ethdev_ethdev_driver.c.o
+[109/222] Linking static target lib/librte_pci.a
+[110/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline.c.o
+[111/222] Linking target lib/librte_pci.so.22.2
+[112/222] Compiling C object lib/librte_ethdev.a.p/ethdev_sff_telemetry.c.o
+[113/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_cirbuf.c.o
+[114/222] Compiling C object lib/librte_ethdev.a.p/ethdev_rte_mtr.c.o
+[115/222] Compiling C object lib/librte_ethdev.a.p/ethdev_sff_8472.c.o
+[116/222] Compiling C object lib/librte_ethdev.a.p/ethdev_sff_8079.c.o
+[117/222] Compiling C object lib/librte_ethdev.a.p/ethdev_sff_common.c.o
+[118/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_parse.c.o
+[119/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_parse_portlist.c.o
+[120/222] Compiling C object lib/librte_ethdev.a.p/ethdev_rte_tm.c.o
+[121/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_parse_string.c.o
+[122/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_parse_num.c.o
+[123/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_socket.c.o
+[124/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_os_unix.c.o
+[125/222] Generating symbol file lib/librte_ring.so.22.2.p/librte_ring.so.22.2.symbols
+[126/222] Compiling C object lib/librte_hash.a.p/hash_rte_fbk_hash.c.o
+[127/222] Linking target lib/librte_rcu.so.22.2
+[128/222] Generating symbol file lib/librte_meter.so.22.2.p/librte_meter.so.22.2.symbols
+[129/222] Linking target lib/librte_mempool.so.22.2
+[130/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_rdline.c.o
+[131/222] Compiling C object lib/librte_ethdev.a.p/ethdev_sff_8636.c.o
+[132/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_parse_ipaddr.c.o
+[133/222] Compiling C object lib/librte_cmdline.a.p/cmdline_cmdline_parse_etheraddr.c.o
+[134/222] Linking static target lib/librte_cmdline.a
+[135/222] Generating symbol file lib/librte_pci.so.22.2.p/librte_pci.so.22.2.symbols
+[136/222] Compiling C object lib/librte_power.a.p/power_guest_channel.c.o
+[137/222] Compiling C object lib/librte_timer.a.p/timer_rte_timer.c.o
+[138/222] Linking static target lib/librte_timer.a
+[139/222] Compiling C object lib/librte_power.a.p/power_power_common.c.o
+[140/222] Compiling C object lib/librte_ethdev.a.p/ethdev_rte_flow.c.o
+[141/222] Linking target lib/librte_timer.so.22.2
+[142/222] Compiling C object lib/librte_compressdev.a.p/compressdev_rte_compressdev_pmd.c.o
+[143/222] Compiling C object lib/librte_power.a.p/power_power_kvm_vm.c.o
+[144/222] Compiling C object lib/librte_compressdev.a.p/compressdev_rte_comp.c.o
+[145/222] Generating symbol file lib/librte_rcu.so.22.2.p/librte_rcu.so.22.2.symbols
+[146/222] Compiling C object lib/librte_cryptodev.a.p/cryptodev_cryptodev_pmd.c.o
+[147/222] Generating symbol file lib/librte_mempool.so.22.2.p/librte_mempool.so.22.2.symbols
+[148/222] Compiling C object lib/librte_compressdev.a.p/compressdev_rte_compressdev.c.o
+[149/222] Linking static target lib/librte_compressdev.a
+[150/222] Compiling C object lib/librte_power.a.p/power_rte_power.c.o
+[151/222] Linking target lib/librte_mbuf.so.22.2
+[152/222] Compiling C object lib/librte_cryptodev.a.p/cryptodev_cryptodev_trace_points.c.o
+[153/222] Compiling C object lib/librte_power.a.p/power_rte_power_empty_poll.c.o
+[154/222] Compiling C object lib/librte_vhost.a.p/vhost_fd_man.c.o
+[155/222] Compiling C object lib/librte_power.a.p/power_power_acpi_cpufreq.c.o
+[156/222] Compiling C object lib/librte_hash.a.p/hash_rte_thash.c.o
+[157/222] Compiling C object lib/librte_power.a.p/power_power_cppc_cpufreq.c.o
+[158/222] Compiling C object lib/librte_dmadev.a.p/dmadev_rte_dmadev.c.o
+[159/222] Generating symbol file lib/librte_timer.so.22.2.p/librte_timer.so.22.2.symbols
+[160/222] Linking static target lib/librte_dmadev.a
+[161/222] Linking target lib/librte_dmadev.so.22.2
+[162/222] Compiling C object drivers/libtmp_rte_bus_pci.a.p/bus_pci_pci_params.c.o
+[163/222] Compiling C object lib/librte_power.a.p/power_power_pstate_cpufreq.c.o
+[164/222] Generating symbol file lib/librte_mbuf.so.22.2.p/librte_mbuf.so.22.2.symbols
+[165/222] Linking target lib/librte_net.so.22.2
+[166/222] Compiling C object drivers/libtmp_rte_bus_pci.a.p/bus_pci_pci_common_uio.c.o
+[167/222] Compiling C object lib/librte_vhost.a.p/vhost_vdpa.c.o
+[168/222] Linking target lib/librte_compressdev.so.22.2
+[169/222] Compiling C object lib/librte_power.a.p/power_rte_power_pmd_mgmt.c.o
+[170/222] Compiling C object lib/librte_security.a.p/security_rte_security.c.o
+[171/222] Linking static target lib/librte_power.a
+[172/222] Linking static target lib/librte_security.a
+[173/222] Linking target lib/librte_reorder.so.22.2
+[174/222] Compiling C object lib/librte_vhost.a.p/vhost_iotlb.c.o
+[175/222] Compiling C object drivers/libtmp_rte_bus_vdev.a.p/bus_vdev_vdev_params.c.o
+[176/222] Generating symbol file lib/librte_dmadev.so.22.2.p/librte_dmadev.so.22.2.symbols
+[177/222] Compiling C object drivers/libtmp_rte_bus_pci.a.p/bus_pci_pci_common.c.o
+[178/222] Compiling C object lib/librte_vhost.a.p/vhost_socket.c.o
+[179/222] Compiling C object lib/librte_ethdev.a.p/ethdev_rte_ethdev.c.o
+[180/222] Linking static target lib/librte_ethdev.a
+[181/222] Compiling C object drivers/libtmp_rte_bus_vdev.a.p/bus_vdev_vdev.c.o
+[182/222] Linking static target drivers/libtmp_rte_bus_vdev.a
+[183/222] Compiling C object lib/librte_cryptodev.a.p/cryptodev_rte_cryptodev.c.o
+[184/222] Compiling C object drivers/libtmp_rte_bus_pci.a.p/bus_pci_linux_pci_vfio.c.o
+[185/222] Linking static target lib/librte_cryptodev.a
+[186/222] Linking target lib/librte_cryptodev.so.22.2
+[187/222] Generating symbol file lib/librte_net.so.22.2.p/librte_net.so.22.2.symbols
+[188/222] Linking target lib/librte_ethdev.so.22.2
+[189/222] Linking target lib/librte_cmdline.so.22.2
+[190/222] Generating drivers/rte_bus_vdev.pmd.c with a custom command
+[191/222] Compiling C object drivers/librte_bus_vdev.a.p/meson-generated_.._rte_bus_vdev.pmd.c.o
+[192/222] Compiling C object drivers/librte_bus_vdev.so.22.2.p/meson-generated_.._rte_bus_vdev.pmd.c.o
+[193/222] Linking static target drivers/librte_bus_vdev.a
+[194/222] Compiling C object drivers/libtmp_rte_bus_pci.a.p/bus_pci_linux_pci.c.o
+[195/222] Linking target drivers/librte_bus_vdev.so.22.2
+[196/222] Linking static target drivers/libtmp_rte_bus_pci.a
+[197/222] Compiling C object lib/librte_vhost.a.p/vhost_vhost.c.o
+[198/222] Compiling C object lib/librte_vhost.a.p/vhost_vhost_user.c.o
+[199/222] Generating drivers/rte_bus_pci.pmd.c with a custom command
+[200/222] Compiling C object drivers/librte_bus_pci.a.p/meson-generated_.._rte_bus_pci.pmd.c.o
+[201/222] Compiling C object drivers/librte_bus_pci.so.22.2.p/meson-generated_.._rte_bus_pci.pmd.c.o
+[202/222] Linking static target drivers/librte_bus_pci.a
+[203/222] Compiling C object drivers/libtmp_rte_mempool_ring.a.p/mempool_ring_rte_mempool_ring.c.o
+[204/222] Linking static target drivers/libtmp_rte_mempool_ring.a
+[205/222] Linking target drivers/librte_bus_pci.so.22.2
+[206/222] Generating symbol file lib/librte_cryptodev.so.22.2.p/librte_cryptodev.so.22.2.symbols
+[207/222] Compiling C object lib/librte_hash.a.p/hash_rte_cuckoo_hash.c.o
+[208/222] Linking target lib/librte_security.so.22.2
+[209/222] Linking static target lib/librte_hash.a
+[210/222] Generating symbol file lib/librte_ethdev.so.22.2.p/librte_ethdev.so.22.2.symbols
+[211/222] Linking target lib/librte_hash.so.22.2
+[212/222] Generating drivers/rte_mempool_ring.pmd.c with a custom command
+[213/222] Compiling C object drivers/librte_mempool_ring.a.p/meson-generated_.._rte_mempool_ring.pmd.c.o
+[214/222] Compiling C object drivers/librte_mempool_ring.so.22.2.p/meson-generated_.._rte_mempool_ring.pmd.c.o
+[215/222] Linking static target drivers/librte_mempool_ring.a
+[216/222] Linking target lib/librte_power.so.22.2
+[217/222] Linking target drivers/librte_mempool_ring.so.22.2
+[218/222] Generating symbol file lib/librte_hash.so.22.2.p/librte_hash.so.22.2.symbols
+[219/222] Compiling C object lib/librte_vhost.a.p/vhost_vhost_crypto.c.o
+[220/222] Compiling C object lib/librte_vhost.a.p/vhost_virtio_net.c.o
+[221/222] Linking static target lib/librte_vhost.a
+[222/222] Linking target lib/librte_vhost.so.22.2
+make[2]: Nothing to be done for 'all'.
+  LINK ioat_perf
+  LINK zipf
+  LINK lsvmd
+  LINK vtophys
+  LINK hello_world
+  LINK hello_sock
+  LINK accel_perf
+  LINK event_perf
+  LINK mem_callbacks
+  LINK env_dpdk_post_init
+  LINK bdev_svc
+  LINK bdevio
+  LINK mkfs
+  LINK spdk_bdev
+  LINK nvmf
+  LINK hello_blob
+  LINK reactor
+  LINK blobcli
+  LINK led
+  LINK verify
+  LINK reactor_perf
+  LINK memory_ut
+  LINK pci_ut
+  LINK hello_bdev
+  LINK app_repeat
+  LINK identify
+  LINK perf
+  LINK reconnect
+  LINK nvme_manage
+  LINK arbitration
+  LINK scheduler
+  LINK rpc_client_test
+  LINK aer
+  LINK poller_perf
+  LINK nvme_fuzz
+  LINK reset
+  LINK bdevperf
+  LINK histogram_ut
+  LINK hotplug
+  LINK sgl
+  LINK cmb_copy
+  LINK nvme_dp
+  LINK accel_ut
+  LINK histogram_perf
+  LINK bdev_ut
+  LINK part_ut
+  LINK iscsi_fuzz
+  LINK overhead
+  LINK abort
+  LINK pmr_persistence
+  LINK err_injection
+  LINK startup
+  LINK reserve
+  LINK scsi_nvme_ut
+  LINK discovery_aer
+  LINK gpt_ut
+  LINK spdk_nvme
+  LINK vbdev_lvol_ut
+  LINK simple_copy
+  LINK bdev_ut
+  LINK jsoncat
+  LINK bdev_zone_ut
+  LINK bdev_raid_ut
+  LINK concat_ut
+  LINK vbdev_zone_block_ut
+  LINK stub
+  LINK connect_stress
+  LINK boot_partition
+  LINK bdev_nvme_ut
+  LINK nvme_compliance
+  LINK fused_ordering
+  LINK tree_ut
+  LINK blob_ut
+  LINK app_ut
+  LINK dma_ut
+  LINK blobfs_async_ut
+  LINK ioat_ut
+  LINK blobfs_sync_ut
+  LINK blobfs_bdev_ut
+  LINK reactor_ut
+  LINK conn_ut
+  LINK json_parse_ut
+  LINK jsonrpc_server_ut
+  LINK lvol_ut
+  LINK log_ut
+  LINK notify_ut
+  LINK nvme_ut
+  LINK tcp_ut
+  LINK dev_ut
+  LINK lun_ut
+  LINK nvme_ctrlr_ut
+  LINK json_util_ut
+  LINK init_grp_ut
+  LINK nvme_ctrlr_cmd_ut
+  LINK ctrlr_ut
+  LINK subsystem_ut
+  LINK json_write_ut
+  LINK sock_ut
+  LINK thread_ut
+  LINK base64_ut
+  LINK pci_event_ut
+  LINK bit_array_ut
+  LINK ctrlr_discovery_ut
+  LINK cpuset_ut
+  LINK scsi_ut
+  LINK iscsi_ut
+  LINK scsi_bdev_ut
+  LINK ctrlr_bdev_ut
+  LINK nvme_ctrlr_ocssd_cmd_ut
+  LINK scsi_pr_ut
+  LINK param_ut
+  LINK nvmf_ut
+  LINK crc16_ut
+  LINK subsystem_ut
+  LINK crc32_ieee_ut
+  LINK crc32c_ut
+  LINK portal_grp_ut
+  LINK tgt_node_ut
+  LINK nvme_ns_ut
+  LINK posix_ut
+  LINK rpc_ut
+  LINK nvme_ns_cmd_ut
+  LINK ftl_l2p_ut
+  LINK ftl_band_ut
+  LINK iov_ut
+  LINK dif_ut
+  LINK nvme_ns_ocssd_cmd_ut
+  LINK pipe_ut
+  LINK math_ut
+  LINK string_ut
+  LINK xor_ut
+  LINK ftl_io_ut
+  LINK ftl_bitmap_ut
+  LINK nvme_pcie_ut
+  LINK nvme_qpair_ut
+  LINK nvme_poll_group_ut
+  LINK ftl_mempool_ut
+  LINK nvme_quirks_ut
+  LINK nvme_tcp_ut
+  LINK ftl_mngt_ut
+  LINK nvme_io_msg_ut
+  LINK nvme_transport_ut
+  LINK ftl_sb_ut
+  LINK nvme_pcie_common_ut
+  LINK ftl_layout_upgrade_ut
+  LINK nvme_opal_ut
+  LINK nvme_fabric_ut
+
+--- stderr ---
+
+
+Message: Setting up dependency ..
+Library spdk_nvme found: YES
+Library spdk_env_dpdk found: YES
+Library spdk_sock found: YES
+Library spdk_sock_posix found: YES
+Library spdk_rpc found: YES
+Library spdk_trace found: YES
+Library spdk_jsonrpc found: YES
+Library spdk_json found: YES
+Library spdk_util found: YES
+Library spdk_log found: YES
+Library spdk_vfio_user found: YES
+Library rte_eal found: YES
+Library rte_telemetry found: YES
+Library rte_bus_pci found: YES
+Library rte_pci found: YES
+Library rte_ring found: YES
+Library rte_mempool found: YES
+Library rte_kvargs found: YES
+Library isal found: YES
+Build targets in project: 1
+Subproject spdk finished.
+
+Dependency spdk found: YES 22.09 (overridden)
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp_7qxw98t
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp_7qxw98t/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp_7qxw98t/output.exe -D_FILE_OFFSET_BITS=64 -O0 -framework CoreFoundation 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: CoreFoundation: No such file or directory
+cc: error: unrecognized command-line option '-framework'
+
+Run-time dependency appleframeworks found: NO (tried framework)
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp9gez6pzr
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp9gez6pzr/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp9gez6pzr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -framework IOKit 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: IOKit: No such file or directory
+cc: error: unrecognized command-line option '-framework'
+
+Run-time dependency appleframeworks found: NO (tried framework)
+Pkg-config binary for 1 is cached.
+Determining dependency '_vfn' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion _vfn` -> 1
+
+CMake binary for 1 is cached as not found
+CMake binary for machine 1 not found. Giving up.
+Run-time dependency _vfn found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency _vfn
+
+Executing subproject libvfn 
+
+Project name: libvfn
+Project version: 0.0.99
+C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the host machine: cc ld.bfd 2.35.2
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/git/xnvme/builddir/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 10.2.1 "c++ (Debian 10.2.1-6) 10.2.1 20210110")
+C++ linker for the host machine: c++ ld.bfd 2.35.2
+C compiler for the build machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the build machine: cc ld.bfd 2.35.2
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/git/xnvme/builddir/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 10.2.1 "c++ (Debian 10.2.1-6) 10.2.1 20210110")
+C++ linker for the build machine: c++ ld.bfd 2.35.2
+Program perl found: YES (/usr/bin/perl)
+Program scripts/trace.pl found: YES (/root/git/xnvme/subprojects/libvfn/scripts/trace.pl)
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmplxtqnnqc
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmplxtqnnqc/testfile.c -o /root/git/xnvme/builddir/meson-private/tmplxtqnnqc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fmacro-prefix-map=prefix= 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fmacro-prefix-map=prefix=: YES 
+Configuring config-host.h using configuration
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmppc36hewo
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmppc36hewo/testfile.c -o /root/git/xnvme/builddir/meson-private/tmppc36hewo/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((cold));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute cold: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpzfmewjvr
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpzfmewjvr/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpzfmewjvr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((const));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute const: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmppqazarpz
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmppqazarpz/testfile.c -o /root/git/xnvme/builddir/meson-private/tmppqazarpz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((deprecated("")));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute deprecated: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp9jf02q1t
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp9jf02q1t/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp9jf02q1t/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(char * p) __attribute__((nonnull(1)));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute nonnull: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpzmaf2lke
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpzmaf2lke/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpzmaf2lke/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((noreturn));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute noreturn: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpsat7ql1p
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpsat7ql1p/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpsat7ql1p/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(const char * p, ...) __attribute__((format(printf, 1, 2)));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute format: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpa50vpo2g
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpa50vpo2g/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpa50vpo2g/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((pure));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute pure: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpu6nb8gis
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpu6nb8gis/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpu6nb8gis/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int *foo(void) __attribute__((returns_nonnull));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute returns_nonnull: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpca6e4zdr
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpca6e4zdr/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpca6e4zdr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror 
+
+Code:
+ 
+    #include <stddef.h>
+
+    static __attribute__((sentinel)) void func(int x, ...) { }
+
+    int main(void) {
+      (void)func;
+      return 0;
+    }
+  
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "have __attribute__((sentinel))" compiles: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpnrlwoo_b
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpnrlwoo_b/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpnrlwoo_b/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((unused));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute unused: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp0l7rhvn1
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp0l7rhvn1/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp0l7rhvn1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((used));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute used: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpzpj24zss
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpzpj24zss/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpzpj24zss/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #define __builtin_choose_expr meson_disable_define_of___builtin_choose_expr
+        
+        #include <limits.h>
+        #undef __builtin_choose_expr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char __builtin_choose_expr (void);
+        
+        #if defined __stub___builtin_choose_expr || defined __stub_____builtin_choose_expr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return __builtin_choose_expr ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /root/git/xnvme/builddir/meson-private/tmpzpj24zss/testfile.c:10:14: error: expected identifier or '(' before '__builtin_choose_expr'
+   10 |         char __builtin_choose_expr (void);
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/root/git/xnvme/builddir/meson-private/tmpzpj24zss/testfile.c: In function 'main':
+/root/git/xnvme/builddir/meson-private/tmpzpj24zss/testfile.c:17:18: error: wrong number of arguments to '__builtin_choose_expr'
+   17 |           return __builtin_choose_expr ();
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp__fngo5i
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp__fngo5i/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp__fngo5i/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(__builtin_choose_expr) && !1
+            #error "No definition for __builtin_choose_expr found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_choose_expr)
+                #error "__builtin_choose_expr not found"
+            #endif
+        #elif ! defined(__builtin_choose_expr)
+            __builtin_choose_expr;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "__builtin_choose_expr" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp0fl4nfud
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp0fl4nfud/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp0fl4nfud/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #define __builtin_constant_p meson_disable_define_of___builtin_constant_p
+        
+        #include <limits.h>
+        #undef __builtin_constant_p
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char __builtin_constant_p (void);
+        
+        #if defined __stub___builtin_constant_p || defined __stub_____builtin_constant_p
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return __builtin_constant_p ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /root/git/xnvme/builddir/meson-private/tmp0fl4nfud/testfile.c:10:14: warning: conflicting types for built-in function '__builtin_constant_p'; expected 'int()' [-Wbuiltin-declaration-mismatch]
+   10 |         char __builtin_constant_p (void);
+      |              ^~~~~~~~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/ccE7XLb4.o: in function `main':
+testfile.c:(.text+0x5): undefined reference to `__builtin_constant_p'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpvdv7896u
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpvdv7896u/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpvdv7896u/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(__builtin_constant_p) && !1
+            #error "No definition for __builtin_constant_p found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_constant_p)
+                #error "__builtin_constant_p not found"
+            #endif
+        #elif ! defined(__builtin_constant_p)
+            __builtin_constant_p;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "__builtin_constant_p" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmppkkar77i
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmppkkar77i/testfile.c -o /root/git/xnvme/builddir/meson-private/tmppkkar77i/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #define __builtin_cpu_supports meson_disable_define_of___builtin_cpu_supports
+        
+        #include <limits.h>
+        #undef __builtin_cpu_supports
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char __builtin_cpu_supports (void);
+        
+        #if defined __stub___builtin_cpu_supports || defined __stub_____builtin_cpu_supports
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return __builtin_cpu_supports ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/cczhT8yL.o: in function `main':
+testfile.c:(.text+0x5): undefined reference to `__builtin_cpu_supports'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpa00s5jty
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpa00s5jty/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpa00s5jty/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(__builtin_cpu_supports) && !1
+            #error "No definition for __builtin_cpu_supports found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_cpu_supports)
+                #error "__builtin_cpu_supports not found"
+            #endif
+        #elif ! defined(__builtin_cpu_supports)
+            __builtin_cpu_supports;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "__builtin_cpu_supports" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpqfxf0tgf
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpqfxf0tgf/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpqfxf0tgf/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #define __builtin_expect meson_disable_define_of___builtin_expect
+        
+        #include <limits.h>
+        #undef __builtin_expect
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char __builtin_expect (void);
+        
+        #if defined __stub___builtin_expect || defined __stub_____builtin_expect
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return __builtin_expect ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /root/git/xnvme/builddir/meson-private/tmpqfxf0tgf/testfile.c:10:14: warning: conflicting types for built-in function '__builtin_expect'; expected 'long int(long int,  long int)' [-Wbuiltin-declaration-mismatch]
+   10 |         char __builtin_expect (void);
+      |              ^~~~~~~~~~~~~~~~
+/usr/bin/ld: /tmp/ccx9TQIz.o: in function `main':
+testfile.c:(.text+0x5): undefined reference to `__builtin_expect'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpnabxqqtr
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpnabxqqtr/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpnabxqqtr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(__builtin_expect) && !1
+            #error "No definition for __builtin_expect found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_expect)
+                #error "__builtin_expect not found"
+            #endif
+        #elif ! defined(__builtin_expect)
+            __builtin_expect;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "__builtin_expect" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpbj_fg9lr
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpbj_fg9lr/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpbj_fg9lr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #define __builtin_types_compatible_p meson_disable_define_of___builtin_types_compatible_p
+        
+        #include <limits.h>
+        #undef __builtin_types_compatible_p
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char __builtin_types_compatible_p (void);
+        
+        #if defined __stub___builtin_types_compatible_p || defined __stub_____builtin_types_compatible_p
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return __builtin_types_compatible_p ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /root/git/xnvme/builddir/meson-private/tmpbj_fg9lr/testfile.c:10:14: error: expected identifier or '(' before '__builtin_types_compatible_p'
+   10 |         char __builtin_types_compatible_p (void);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/git/xnvme/builddir/meson-private/tmpbj_fg9lr/testfile.c: In function 'main':
+/root/git/xnvme/builddir/meson-private/tmpbj_fg9lr/testfile.c:17:48: error: expected specifier-qualifier-list before ')' token
+   17 |           return __builtin_types_compatible_p ();
+      |                                                ^
+/root/git/xnvme/builddir/meson-private/tmpbj_fg9lr/testfile.c:17:48: error: expected statement before ')' token
+
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpwv3lrsoc
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpwv3lrsoc/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpwv3lrsoc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(__builtin_types_compatible_p) && !1
+            #error "No definition for __builtin_types_compatible_p found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_types_compatible_p)
+                #error "__builtin_types_compatible_p not found"
+            #endif
+        #elif ! defined(__builtin_types_compatible_p)
+            __builtin_types_compatible_p;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "__builtin_types_compatible_p" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp2g3t66_u
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp2g3t66_u/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp2g3t66_u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ #include <time.h>
+        void bar(void) {
+            sizeof(struct timespec);
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for type "struct timespec" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpur82lng7
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpur82lng7/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpur82lng7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ #include <time.h>
+#include <limits.h>
+
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &clock_gettime;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpdjtx87mj
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpdjtx87mj/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpdjtx87mj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror 
+
+Code:
+ 
+    int main(void) {
+      int *foo = (int[]){1, 2, 3, 4};
+      return 0;
+    }
+  
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "have compound literals" compiles: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpfix_vbq2
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpfix_vbq2/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpfix_vbq2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #include <err.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "err.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp1mgxli95
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp1mgxli95/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp1mgxli95/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -D_GNU_SOURCE 
+
+Code:
+ #include <ctype.h>
+#include <limits.h>
+
+        #if defined __stub_isblank || defined __stub___isblank
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &isblank;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "isblank" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp_5697h6o
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp_5697h6o/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp_5697h6o/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror 
+
+Code:
+ 
+    int main(void) {
+      return ({ int x = 1; x; });
+    }
+  
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "have statement expressions" compiles: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpvwaqtqt2
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpvwaqtqt2/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpvwaqtqt2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
+
+Code:
+ 
+        #include <sys/unistd.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "sys/unistd.h" : YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpdmvsb9hs
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmpdmvsb9hs/testfile.c -o /root/git/xnvme/builddir/meson-private/tmpdmvsb9hs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror 
+
+Code:
+ 
+    int main(void) {
+      int x;
+      __typeof__(x) y;
+      y = x;
+      return y == x ? 0 : 1;
+    }
+  
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "have __typeof__" compiles: YES 
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmp345hhbae
+Command line:  cc /root/git/xnvme/builddir/meson-private/tmp345hhbae/testfile.c -o /root/git/xnvme/builddir/meson-private/tmp345hhbae/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((warn_unused_result));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute warn_unused_result: YES 
+Configuring config.h using configuration
+Adding test "rq_test"
+Adding test "iommu_test"
+Dependency threads found: YES unknown (cached)
+Adding test "include-bundle-nvme"
+Adding test "include-bundle-vfio"
+Adding test "include-bundle-pci"
+Adding test "include-bundle-support"
+Adding test "cpp"
+Program sphinx-build skipped: feature docs disabled
+Program ctags found: NO
+Program cgcc found: NO
+Build targets in project: 15
+Subproject libvfn finished.
+
+Dependency _vfn from subproject subprojects/libvfn found: YES 0.0.99
+Build targets in project: 46
+
+libvfn 0.0.99
+
+  Directories
+    Install prefix   : /usr/local
+    Binary directory : bin
+    Library directory: lib/x86_64-linux-gnu
+    Include directory: include
+    Build directory  : /root/git/xnvme/builddir/subprojects/libvfn
+
+  Compilation
+    Host CPU         : x86_64
+    Host endianness  : little
+    C compiler       : cc
+    CFLAGS           : -O3
+    LDFLAGS          : 
+
+  Dependencies
+    libnvme          : NO
+
+  Features
+    Debugging        : NO
+    Documentation    : NO
+    Profiling        : NO
+
+xnvme 0.6.0
+
+  Subprojects
+    fio   : YES
+    libvfn: YES
+    spdk  : YES
+
+Found ninja-1.10.2.git.kitware.jobserver-1 at /usr/local/bin/ninja
+Running compile:
+Working directory:  /root/git/xnvme/builddir/meson-private/tmpwwwm_29f
+Command line:  c++ /root/git/xnvme/builddir/meson-private/tmpwwwm_29f/testfile.cpp -o /root/git/xnvme/builddir/meson-private/tmpwwwm_29f/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/10/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/10/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/10/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Failed to guess install tag for /usr/local/share/xnvme/xnvme-compare.fio
+Failed to guess install tag for /usr/local/share/xnvme/xnvme-verify.fio
+Failed to guess install tag for /usr/local/share/xnvme/xnvme-zoned.fio

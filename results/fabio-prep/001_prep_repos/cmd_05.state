@@ -1,0 +1,8 @@
+begin: 1666946041.0902498
+cmd: git checkout liburing-2.2
+cwd: /root/git/liburing
+elapsed: 0.8387651443481445
+end: 1666946041.929015
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_05.output

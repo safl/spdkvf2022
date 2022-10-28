@@ -1,0 +1,294 @@
+GNU ld (GNU Binutils for Debian) 2.35.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+ldd (Debian GLIBC 2.31-13+deb11u5) 2.31
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Written by Roland McGrath and Ulrich Drepper.
+Get:1 http://security.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Hit:2 http://ftp.dk.debian.org/debian bullseye InRelease
+Get:3 http://ftp.dk.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://security.debian.org/debian-security bullseye-security/main Sources [167 kB]
+Get:5 http://security.debian.org/debian-security bullseye-security/main amd64 Packages [193 kB]
+Fetched 452 kB in 2s (270 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following package was automatically installed and is no longer required:
+  linux-image-5.10.0-13-amd64
+Use 'apt autoremove' to remove it.
+The following packages have been kept back:
+  linux-image-amd64
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+aptitude is already the newest version (0.8.13-3).
+The following package was automatically installed and is no longer required:
+  linux-image-5.10.0-13-amd64
+Use 'apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+autoconf is already installed at the requested version (2.69-14)
+build-essential is already installed at the requested version (12.9)
+clang-format is already installed at the requested version (1:11.0-51+nmu5)
+git is already installed at the requested version (1:2.30.2-1)
+libaio-dev is already installed at the requested version (0.3.112-9)
+libcunit1-dev is already installed at the requested version (2.1-3-dfsg-2.3)
+libncurses5-dev is already installed at the requested version (6.2+20201114-2)
+libnuma-dev is already installed at the requested version (2.0.12-1+b1)
+libssl-dev is already installed at the requested version (1.1.1n-0+deb11u3)
+libtool is already installed at the requested version (2.4.6-15)
+nasm is already installed at the requested version (2.15.05-1)
+openssl is already installed at the requested version (1.1.1n-0+deb11u3)
+pkg-config is already installed at the requested version (0.29.2-1)
+python3 is already installed at the requested version (3.9.2-3)
+python3-pip is already installed at the requested version (20.3.4-4+deb11u1)
+python3-venv is already installed at the requested version (3.9.2-3)
+uuid-dev is already installed at the requested version (2.36.1-8+deb11u1)
+autoconf is already installed at the requested version (2.69-14)
+build-essential is already installed at the requested version (12.9)
+clang-format is already installed at the requested version (1:11.0-51+nmu5)
+git is already installed at the requested version (1:2.30.2-1)
+libaio-dev is already installed at the requested version (0.3.112-9)
+libcunit1-dev is already installed at the requested version (2.1-3-dfsg-2.3)
+libncurses5-dev is already installed at the requested version (6.2+20201114-2)
+libnuma-dev is already installed at the requested version (2.0.12-1+b1)
+libssl-dev is already installed at the requested version (1.1.1n-0+deb11u3)
+libtool is already installed at the requested version (2.4.6-15)
+nasm is already installed at the requested version (2.15.05-1)
+openssl is already installed at the requested version (1.1.1n-0+deb11u3)
+pkg-config is already installed at the requested version (0.29.2-1)
+python3 is already installed at the requested version (3.9.2-3)
+python3-pip is already installed at the requested version (20.3.4-4+deb11u1)
+python3-venv is already installed at the requested version (3.9.2-3)
+uuid-dev is already installed at the requested version (2.36.1-8+deb11u1)
+No packages will be installed, upgraded, or removed.
+0 packages upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 0 B of archives. After unpacking 0 B will be used.
+Writing extended state information...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Requirement already satisfied: meson in /usr/local/lib/python3.9/dist-packages (0.63.0)
+Requirement already satisfied: ninja in /usr/local/lib/python3.9/dist-packages (1.10.2.3)
+Requirement already satisfied: pyelftools in /usr/local/lib/python3.9/dist-packages (0.28)
+prefix                        /usr
+includedir                    /usr/include
+libdir                        /usr/lib
+libdevdir                     /usr/lib
+relativelibdir                
+mandir                        /usr/man
+datadir                       /usr/share
+stringop_overflow             yes
+array_bounds                  yes
+__kernel_rwf_t                yes
+__kernel_timespec             yes
+open_how                      yes
+statx                         yes
+glibc_statx                   yes
+C++                           yes
+has_ucontext                  yes
+has_memfd_create              yes
+liburing_nolibc               no
+CC                            gcc
+CXX                           g++
+make[1]: Entering directory '/root/git/xnvme/liburing/src'
+     CC setup.ol
+     CC queue.ol
+     CC register.ol
+     CC syscall.ol
+     AR liburing.a
+ RANLIB liburing.a
+     CC setup.os
+     CC queue.os
+     CC register.os
+     CC syscall.os
+     CC liburing.so.2.2
+make[1]: Leaving directory '/root/git/xnvme/liburing/src'
+make[1]: Entering directory '/root/git/xnvme/liburing/test'
+     CC 232c93d07b74.t
+     CC 35fa71a030ca.t
+     CC 500f9fbadef8.t
+     CC 7ad0e4b2f83c.t
+     CC 8a9973408177.t
+     CC 917257daa0fe.t
+     CC a0908ae19763.t
+     CC a4c0b3decb33.t
+     CC accept.t
+     CC accept-link.t
+     CC accept-reuse.t
+     CC accept-test.t
+     CC across-fork.t
+     CC b19062a56726.t
+     CC b5837bd5311d.t
+     CC buf-ring.t
+     CC ce593a6c480a.t
+     CC close-opath.t
+     CC connect.t
+     CC cq-full.t
+     CC cq-overflow.t
+     CC cq-peek-batch.t
+     CC cq-ready.t
+     CC cq-size.t
+     CC d4ae271dfaae.t
+     CC d77a67ed5f27.t
+     CC defer.t
+     CC double-poll-crash.t
+     CC drop-submit.t
+     CC eeed8b54e0df.t
+     CC empty-eownerdead.t
+     CC eventfd.t
+     CC eventfd-disable.t
+     CC eventfd-reg.t
+     CC eventfd-ring.t
+     CC exec-target.t
+     CC exit-no-cleanup.t
+     CC fadvise.t
+     CC fallocate.t
+     CC fc2a85cb02ef.t
+     CC file-register.t
+     CC files-exit-hang-poll.t
+     CC files-exit-hang-timeout.t
+     CC file-update.t
+     CC file-verify.t
+     CC fixed-buf-iter.t
+     CC fixed-link.t
+     CC fixed-reuse.t
+     CC fpos.t
+     CC fsync.t
+     CC hardlink.t
+     CC io-cancel.t
+     CC iopoll.t
+     CC io_uring_enter.t
+     CC io_uring_register.t
+     CC io_uring_setup.t
+     CC lfs-openat.t
+     CC lfs-openat-write.t
+     CC link.t
+     CC link_drain.t
+     CC link-timeout.t
+     CC madvise.t
+     CC mkdir.t
+     CC msg-ring.t
+     CC multicqes_drain.t
+     CC nop-all-sizes.t
+     CC nop.t
+     CC openat2.t
+     CC open-close.t
+     CC open-direct-link.t
+     CC open-direct-pick.t
+     CC personality.t
+     CC pipe-eof.t
+     CC pipe-reuse.t
+     CC poll.t
+     CC poll-cancel.t
+     CC poll-cancel-all.t
+     CC poll-cancel-ton.t
+     CC poll-link.t
+     CC poll-many.t
+     CC poll-mshot-update.t
+     CC poll-ring.t
+     CC poll-v-poll.t
+     CC pollfree.t
+     CC probe.t
+     CC read-before-exit.t
+     CC read-write.t
+     CC recv-msgall.t
+     CC recv-msgall-stream.t
+     CC register-restrictions.t
+     CC rename.t
+     CC ringbuf-read.t
+     CC ring-leak2.t
+     CC ring-leak.t
+     CC rsrc_tags.t
+     CC rw_merge_test.t
+     CC self.t
+     CC sendmsg_fs_cve.t
+     CC send_recv.t
+     CC send_recvmsg.t
+     CC shared-wq.t
+     CC short-read.t
+     CC shutdown.t
+     CC sigfd-deadlock.t
+     CC skip-cqe.t
+     CC socket.t
+     CC socket-rw.t
+     CC socket-rw-eagain.t
+     CC socket-rw-offset.t
+     CC splice.t
+     CC sq-full.t
+     CXX sq-full-cpp.t
+     CC sqpoll-cancel-hang.t
+     CC sqpoll-disable-exit.t
+     CC sq-poll-dup.t
+     CC sqpoll-exit-hang.t
+     CC sq-poll-kthread.t
+     CC sq-poll-share.t
+     CC sqpoll-sleep.t
+     CC sq-space_left.t
+     CC stdout.t
+     CC submit-link-fail.t
+     CC submit-reuse.t
+     CC symlink.t
+     CC teardowns.t
+     CC thread-exit.t
+     CC timeout.t
+     CC timeout-new.t
+     CC timeout-overflow.t
+     CC tty-write-dpoll.t
+     CC unlink.t
+     CC wakeup-hang.t
+     CC xattr.t
+     CC statx.t
+make[1]: Leaving directory '/root/git/xnvme/liburing/test'
+make[1]: Entering directory '/root/git/xnvme/liburing/examples'
+     CC io_uring-cp
+     CC io_uring-test
+     CC link-cp
+     CC ucontext-cp
+make[1]: Leaving directory '/root/git/xnvme/liburing/examples'
+sed -e "s%@prefix@%/usr%g" \
+    -e "s%@libdir@%/usr/lib%g" \
+    -e "s%@includedir@%/usr/include%g" \
+    -e "s%@NAME@%liburing%g" \
+    -e "s%@VERSION@%2.2%g" \
+    liburing.pc.in >liburing.pc
+make[1]: Entering directory '/root/git/xnvme/liburing/src'
+install -D -m 644 include/liburing/io_uring.h /usr/include/liburing/io_uring.h
+install -D -m 644 include/liburing.h /usr/include/liburing.h
+install -D -m 644 include/liburing/compat.h /usr/include/liburing/compat.h
+install -D -m 644 include/liburing/barrier.h /usr/include/liburing/barrier.h
+install -D -m 644 liburing.a /usr/lib/liburing.a
+install -D -m 755 liburing.so.2.2 /usr/lib/liburing.so.2.2
+ln -sf liburing.so.2.2 /usr/lib/liburing.so.2
+ln -sf liburing.so.2.2 /usr/lib/liburing.so
+make[1]: Leaving directory '/root/git/xnvme/liburing/src'
+install -D -m 644 liburing.pc /usr/lib/pkgconfig/liburing.pc
+install -m 755 -d /usr/man/man2
+install -m 644 man/*.2 /usr/man/man2
+install -m 755 -d /usr/man/man3
+install -m 644 man/*.3 /usr/man/man3
+install -m 755 -d /usr/man/man7
+install -m 644 man/*.7 /usr/man/man7
+fatal: destination path 'liburing' already exists and is not an empty directory.
+HEAD is now at dda4848 test/io_uring_setup: quiet it down
+ar: creating liburing.a

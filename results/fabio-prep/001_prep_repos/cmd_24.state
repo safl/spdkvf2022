@@ -1,0 +1,8 @@
+begin: 1666946059.9020216
+cmd: git checkout fio-3.32
+cwd: /root/git/fio
+elapsed: 0.8836119174957275
+end: 1666946060.7856336
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_24.output

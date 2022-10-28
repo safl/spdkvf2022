@@ -1,0 +1,8 @@
+begin: 1666946051.4178784
+cmd: git fetch --all
+cwd: /root/git/spdk
+elapsed: 1.3507936000823975
+end: 1666946052.768672
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_16.output

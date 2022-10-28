@@ -1,0 +1,8 @@
+begin: 1666946091.88663
+cmd: ./configure --disable-xnvme --prefix=/opt/fio
+cwd: /root/git/fio
+elapsed: 4.984821557998657
+end: 1666946096.8714516
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio/cmd_03.output

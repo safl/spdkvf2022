@@ -1,0 +1,177 @@
+The Meson build system
+Version: 0.63.0
+Source dir: /root/git/xnvme
+Build dir: /root/git/xnvme/builddir
+Build type: native build
+Project name: xnvme
+Project version: 0.6.0
+C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+C linker for the host machine: cc ld.bfd 2.35.2
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Message: host_machine.system: linux
+Compiler for C supports arguments -Wno-missing-braces: YES 
+Program python3 found: YES (/usr/bin/python3)
+Message: python.language_version: 3.9
+Has header "linux/blkzoned.h" : YES 
+Has header "linux/blkzoned.h" : YES (cached)
+Configuring xnvme_config.h using configuration
+Dependency bash-completion skipped: feature bash_completion disabled
+Program cp found: YES (/usr/bin/cp)
+Run-time dependency threads found: YES
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency fio found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency fio
+
+Executing subproject fio 
+
+fio| Project name: fio
+fio| Project version: 3.32
+fio| C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+fio| C linker for the host machine: cc ld.bfd 2.35.2
+fio| Build targets in project: 1
+fio| Subproject fio finished.
+
+Dependency fio found: YES 3.32 (overridden)
+Has header "setupapi.h" : NO 
+Library rt found: YES
+Checking for function "clock_gettime" with dependency -lrt: YES 
+Has header "libaio.h" : YES 
+Library aio found: YES
+Run-time dependency liburing found: YES 2.2
+Has header "math.h" : YES 
+Library m found: YES
+Run-time dependency openssl found: YES 1.1.1n
+Has header "dlfcn.h" : YES 
+Library dl found: YES
+Has header "uuid/uuid.h" : YES 
+Library uuid found: YES
+Has header "numaif.h" : YES 
+Library numa found: YES
+Has header "execinfo.h" : YES 
+Library execinfo found: NO
+Has header "sys/elf_common.h" : NO 
+Run-time dependency spdk found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency spdk
+
+Executing subproject spdk 
+
+spdk| Project name: spdk
+spdk| Project version: 22.09
+spdk| C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+spdk| C linker for the host machine: cc ld.bfd 2.35.2
+spdk| Program python3 found: YES (/usr/bin/python3)
+spdk| Message: Checking if generic platform (Apple Silicon)
+spdk| Message: Building ..
+spdk| Program make found: YES (/usr/bin/make)
+spdk| Message: Setting up dependency ..
+spdk| Library spdk_nvme found: YES
+spdk| Library spdk_env_dpdk found: YES
+spdk| Library spdk_sock found: YES
+spdk| Library spdk_sock_posix found: YES
+spdk| Library spdk_rpc found: YES
+spdk| Library spdk_trace found: YES
+spdk| Library spdk_jsonrpc found: YES
+spdk| Library spdk_json found: YES
+spdk| Library spdk_util found: YES
+spdk| Library spdk_log found: YES
+spdk| Library spdk_vfio_user found: YES
+spdk| Library rte_eal found: YES
+spdk| Library rte_telemetry found: YES
+spdk| Library rte_bus_pci found: YES
+spdk| Library rte_pci found: YES
+spdk| Library rte_ring found: YES
+spdk| Library rte_mempool found: YES
+spdk| Library rte_kvargs found: YES
+spdk| Library isal found: YES
+spdk| Build targets in project: 1
+spdk| Subproject spdk finished.
+
+Dependency spdk found: YES 22.09 (overridden)
+Run-time dependency appleframeworks found: NO (tried framework)
+Run-time dependency appleframeworks found: NO (tried framework)
+Run-time dependency _vfn found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency _vfn
+
+Executing subproject libvfn 
+
+libvfn| Project name: libvfn
+libvfn| Project version: 0.0.99
+libvfn| C compiler for the host machine: cc (gcc 10.2.1 "cc (Debian 10.2.1-6) 10.2.1 20210110")
+libvfn| C linker for the host machine: cc ld.bfd 2.35.2
+libvfn| C++ compiler for the host machine: c++ (gcc 10.2.1 "c++ (Debian 10.2.1-6) 10.2.1 20210110")
+libvfn| C++ linker for the host machine: c++ ld.bfd 2.35.2
+libvfn| Program perl found: YES (/usr/bin/perl)
+libvfn| Program scripts/trace.pl found: YES (/root/git/xnvme/subprojects/libvfn/scripts/trace.pl)
+libvfn| Compiler for C supports arguments -fmacro-prefix-map=prefix=: YES
+libvfn| Configuring config-host.h using configuration
+libvfn| Compiler for C supports function attribute cold: YES
+libvfn| Compiler for C supports function attribute const: YES
+libvfn| Compiler for C supports function attribute deprecated: YES
+libvfn| Compiler for C supports function attribute nonnull: YES
+libvfn| Compiler for C supports function attribute noreturn: YES
+libvfn| Compiler for C supports function attribute format: YES
+libvfn| Compiler for C supports function attribute pure: YES
+libvfn| Compiler for C supports function attribute returns_nonnull: YES
+libvfn| Checking if "have __attribute__((sentinel))" compiles: YES
+libvfn| Compiler for C supports function attribute unused: YES
+libvfn| Compiler for C supports function attribute used: YES
+libvfn| Checking for function "__builtin_choose_expr" : YES
+libvfn| Checking for function "__builtin_constant_p" : YES
+libvfn| Checking for function "__builtin_cpu_supports" : YES
+libvfn| Checking for function "__builtin_expect" : YES
+libvfn| Checking for function "__builtin_types_compatible_p" : YES
+libvfn| Checking for type "struct timespec" : YES
+libvfn| Checking for function "clock_gettime" : YES
+libvfn| Checking if "have compound literals" compiles: YES
+libvfn| Check usable header "err.h" : YES
+libvfn| Checking for function "isblank" : YES
+libvfn| Checking if "have statement expressions" compiles: YES
+libvfn| Check usable header "sys/unistd.h" : YES
+libvfn| Checking if "have __typeof__" compiles: YES
+libvfn| Compiler for C supports function attribute warn_unused_result: YES
+libvfn| Configuring config.h using configuration
+libvfn| Dependency threads found: YES unknown (cached)
+libvfn| Program sphinx-build skipped: feature docs disabled
+libvfn| Program ctags found: NO
+libvfn| Program cgcc found: NO
+libvfn| Build targets in project: 15
+libvfn| Subproject libvfn finished.
+
+Dependency _vfn from subproject subprojects/libvfn found: YES 0.0.99
+Build targets in project: 46
+
+libvfn 0.0.99
+
+  Directories
+    Install prefix   : /usr/local
+    Binary directory : bin
+    Library directory: lib/x86_64-linux-gnu
+    Include directory: include
+    Build directory  : /root/git/xnvme/builddir/subprojects/libvfn
+
+  Compilation
+    Host CPU         : x86_64
+    Host endianness  : little
+    C compiler       : cc
+    CFLAGS           : -O3
+    LDFLAGS          : 
+
+  Dependencies
+    libnvme          : NO
+
+  Features
+    Debugging        : NO
+    Documentation    : NO
+    Profiling        : NO
+
+xnvme 0.6.0
+
+  Subprojects
+    fio   : YES
+    libvfn: YES
+    spdk  : YES
+
+Found ninja-1.10.2.git.kitware.jobserver-1 at /usr/local/bin/ninja

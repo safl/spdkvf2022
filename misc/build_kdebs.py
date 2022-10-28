@@ -38,12 +38,10 @@ def worklet_entry(args, cijoe, step):
         "./scripts/config --disable CONFIG_DEBUG_INFO",
         "./scripts/config --disable SYSTEM_TRUSTED_KEYS",
         "./scripts/config --disable SYSTEM_REVOCATION_KEYS",
-
         "./scripts/config --disable CONFIG_RETPOLINE",
         "./scripts/config --disable CONFIG_PAGE_TABLE_ISOLATION",
         "./scripts/config --disable CONFIG_BLK_CGROUP",
         "./scripts/config --disable CONFIG_BLK_WBT_MQ",
-
         f"yes '' | make -j$(nproc) bindeb-pkg LOCALVERSION={localversion}",
         f"mkdir -p {cijoe.output_path}/artifacts/linux",
         f"mv ../*.deb {cijoe.output_path}/artifacts/linux",

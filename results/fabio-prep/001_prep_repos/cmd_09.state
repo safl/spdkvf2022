@@ -1,0 +1,9 @@
+begin: 1666946044.4750242
+cmd: '[ ! -d /root/git/xnvme ] && git clone https://github.com/OpenMPDK/xNVMe.git
+  /root/git/xnvme --recursive'
+cwd: None
+elapsed: 0.8060839176177979
+end: 1666946045.2811081
+err: 1
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_09.output

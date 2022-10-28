@@ -1,0 +1,8 @@
+begin: 1666946300.1305194
+cmd: cat /boot/config-$(uname -r)
+cwd: None
+elapsed: 1.144500970840454
+end: 1666946301.2750204
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_04.output

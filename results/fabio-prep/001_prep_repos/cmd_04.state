@@ -1,0 +1,8 @@
+begin: 1666946039.6878924
+cmd: git fetch --all
+cwd: /root/git/liburing
+elapsed: 1.398493766784668
+end: 1666946041.0863862
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_04.output

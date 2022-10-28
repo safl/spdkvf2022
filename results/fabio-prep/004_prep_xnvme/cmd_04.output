@@ -1,0 +1,257 @@
+[1/257] Generating toolbox/xnvme-driver-script with a custom command
+[2/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_err_err.c.o
+[3/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_str_str.c.o
+[4/257] Compiling C object subprojects/libvfn/lib/gentable-crc64.p/gentable-crc64.c.o
+[5/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_list_list.c.o
+[6/257] Compiling C object tests/xnvme_tests_buf.p/buf.c.o
+[7/257] Compiling C object tests/xnvme_tests_cli.p/cli.c.o
+[8/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_time_time.c.o
+[9/257] Compiling C object tests/xnvme_tests_async_intf.p/async_intf.c.o
+[10/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_opt_parse.c.o
+[11/257] Compiling C object subprojects/libvfn/tools/vfntool/vfntool.p/vfntool.c.o
+[12/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_tap_tap.c.o
+[13/257] Compiling C object tests/xnvme_tests_enum.p/enum.c.o
+[14/257] Linking target subprojects/libvfn/lib/gentable-crc64
+[15/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_opt_usage.c.o
+[16/257] Compiling C object tests/xnvme_tests_xnvmec.p/xnvmec.c.o
+[17/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_opt_opt.c.o
+[18/257] Compiling C object tests/xnvme_tests_znd_append.p/znd_append.c.o
+[19/257] Compiling C object tests/xnvme_tests_xnvme_file.p/xnvme_file.c.o
+[20/257] Compiling C object tests/xnvme_tests_znd_state.p/znd_state.c.o
+[21/257] Compiling C object tests/xnvme_tests_znd_explicit_open.p/znd_explicit_open.c.o
+[22/257] Compiling C object tests/xnvme_tests_lblk.p/lblk.c.o
+[23/257] Compiling C object tests/xnvme_tests_scc.p/scc.c.o
+[24/257] Compiling C object tools/nvmec.p/nvmec.c.o
+[25/257] Compiling C object tests/xnvme_tests_znd_zrwa.p/znd_zrwa.c.o
+[26/257] Compiling C object tests/xnvme_tests_ioworker.p/ioworker.c.o
+[27/257] Compiling C object examples/xnvme_dev.p/xnvme_dev.c.o
+[28/257] Compiling C object examples/xnvme_enum.p/xnvme_enum.c.o
+[29/257] Compiling C object examples/xnvme_hello.p/xnvme_hello.c.o
+[30/257] Compiling C object tools/lblk.p/lblk.c.o
+[31/257] Compiling C object examples/xnvme_single_async.p/xnvme_single_async.c.o
+[32/257] Compiling C object examples/xnvme_single_sync.p/xnvme_single_sync.c.o
+[33/257] Compiling C object tools/xdd.p/xdd.c.o
+[34/257] Compiling C object tools/zoned.p/zoned.c.o
+[35/257] Compiling C object examples/xnvme_io_async.p/xnvme_io_async.c.o
+[36/257] Compiling C object tools/xnvme.p/xnvme.c.o
+[37/257] Compiling C object subprojects/libvfn/ccan/libccan.a.p/ccan_opt_helpers.c.o
+[38/257] Linking static target subprojects/libvfn/ccan/libccan.a
+[39/257] Compiling C object examples/zoned_io_sync.p/zoned_io_sync.c.o
+[40/257] Compiling C object tools/xnvme_file.p/xnvme_file.c.o
+[41/257] Compiling C object examples/zoned_io_async.p/zoned_io_async.c.o
+[42/257] Generating subprojects/libvfn/include/vfn/trace/trace events header with a custom command (wrapped by meson to capture output)
+[43/257] Generating subprojects/libvfn/src/trace/trace events source with a custom command (wrapped by meson to capture output)
+[44/257] Compiling C object subprojects/libvfn/tests/pci.p/include-bundle-pci.c.o
+[45/257] Compiling C object subprojects/libvfn/tests/vfio.p/include-bundle-vfio.c.o
+[46/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_fbsd_nvme.c.o
+[47/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_fbsd.c.o
+[48/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_fbsd_dev.c.o
+[49/257] Generating subprojects/libvfn/src/nvme/crc64table_h with a custom command (wrapped by meson to capture output)
+[50/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_fbsd_sync.c.o
+[51/257] Compiling C object subprojects/libvfn/tests/nvme.p/include-bundle-nvme.c.o
+[52/257] Compiling C object subprojects/libvfn/tests/support.p/include-bundle-support.c.o
+[53/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux.c.o
+[54/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_adm.c.o
+[55/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/meson-generated_.._.._trace_events.c.o
+[56/257] Compiling C++ object subprojects/libvfn/tests/cpp.p/cpp.cc.o
+[57/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_macos.c.o
+[58/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_macos_admin.c.o
+[59/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/.._support_log.c.o
+[60/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_async_ucmd.c.o
+[61/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_async_libaio.c.o
+[62/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/.._support_io.c.o
+[63/257] Compiling C object subprojects/libvfn/src/vfio/iommu_test.p/meson-generated_.._.._trace_events.c.o
+[64/257] Compiling C object subprojects/libvfn/src/vfio/iommu_test.p/.._support_io.c.o
+[65/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_hugepage.c.o
+[66/257] Compiling C object tools/fio-engine/libxnvme-fio-engine.so.p/xnvme_fioe.c.o
+[67/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_nvme.c.o
+[68/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/util.c.o
+[69/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/.._support_mem.c.o
+[70/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_dev.c.o
+[71/257] Compiling C object subprojects/libvfn/src/vfio/iommu_test.p/.._support_log.c.o
+[72/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/queue.c.o
+[73/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/meson-generated_.._trace_events.c.o
+[74/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/support_io.c.o
+[75/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_block.c.o
+[76/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_linux_async_liburing.c.o
+[77/257] Compiling C object subprojects/libvfn/src/vfio/iommu_test.p/.._support_mem.c.o
+[78/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/support_log.c.o
+[79/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/trace.c.o
+[80/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be.c.o
+[81/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/support_mem.c.o
+[82/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/nvme_util.c.o
+[83/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/nvme_queue.c.o
+[84/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_macos_dev.c.o
+[85/257] Compiling C object subprojects/libvfn/src/nvme/rq_test.p/rq_test.c.o
+[86/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_macos_sync.c.o
+[87/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix.c.o
+[88/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/nvme_rq.c.o
+[89/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/pci_util.c.o
+[90/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_nosys.c.o
+[91/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/vfio_pci.c.o
+[92/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_admin.c.o
+[93/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_async_nil.c.o
+[94/257] Linking target subprojects/libvfn/src/nvme/rq_test
+[95/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_mem.c.o
+[96/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/vfio_core.c.o
+[97/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_ramdisk.c.o
+[98/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_sync.c.o
+[99/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_async_emu.c.o
+[100/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_dev.c.o
+[101/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_ramdisk_admin.c.o
+[102/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_async_aio.c.o
+[103/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_ramdisk_dev.c.o
+[104/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_ramdisk_sync.c.o
+[105/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_posix_async_thrpool.c.o
+[106/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows.c.o
+[107/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_vfio_admin.c.o
+[108/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_spdk.c.o
+[109/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_vfio.c.o
+[110/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/nvme_core.c.o
+[111/257] Compiling C object subprojects/libvfn/src/libvfn.a.p/vfio_iommu.c.o
+[112/257] Compiling C object subprojects/libvfn/src/vfio/iommu_test.p/iommu_test.c.o
+[113/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_spdk_async.c.o
+[114/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_spdk_mem.c.o
+[115/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_async_iocp_th.c.o
+[116/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_spdk_sync.c.o
+[117/257] Linking static target subprojects/libvfn/src/libvfn.a
+[118/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_async_iocp.c.o
+[119/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_async_ioring.c.o
+[120/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_spdk_admin.c.o
+[121/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_vfio_mem.c.o
+[122/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_vfio_sync.c.o
+[123/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_dev.c.o
+[124/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_vfio_async.c.o
+[125/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_vfio_dev.c.o
+[126/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_fs.c.o
+[127/257] Linking target subprojects/libvfn/src/vfio/iommu_test
+[128/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_nvme.c.o
+[129/257] Linking target subprojects/libvfn/tests/nvme
+[130/257] Linking target subprojects/libvfn/tests/pci
+[131/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_mem.c.o
+[132/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_windows_block.c.o
+[133/257] Linking target subprojects/libvfn/tests/vfio
+[134/257] Linking target subprojects/libvfn/tests/support
+[135/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_libconf_entries.c.o
+[136/257] Linking target subprojects/libvfn/tools/vfntool/vfntool
+[137/257] Linking target subprojects/libvfn/tests/cpp
+[138/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_buf.c.o
+[139/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_cmd.c.o
+[140/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_req.c.o
+[141/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_geo.c.o
+[142/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_ident.c.o
+[143/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_libconf.c.o
+[144/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_file.c.o
+[145/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_dev.c.o
+[146/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_be_spdk_dev.c.o
+[147/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_lba.c.o
+[148/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_ver.c.o
+[149/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_fbsd.c.o
+[150/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_fbsd_dev.c.o
+[151/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_opts.c.o
+[152/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_nvm.c.o
+[153/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_ramdisk.c.o
+[154/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_spec_pp.c.o
+[155/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_fbsd_sync.c.o
+[156/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_queue.c.o
+[157/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_fbsd_nvme.c.o
+[158/257] Compiling C object lib/libxnvme-static.a.p/xnvme_adm.c.o
+[159/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_macos.c.o
+[160/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux.c.o
+[161/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_macos_admin.c.o
+[162/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_macos_sync.c.o
+[163/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_async_libaio.c.o
+[164/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_hugepage.c.o
+[165/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_znd.c.o
+[166/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_nvme.c.o
+[167/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_macos_dev.c.o
+[168/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_nosys.c.o
+[169/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix.c.o
+[170/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_admin.c.o
+[171/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_async_ucmd.c.o
+[172/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_block.c.o
+[173/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_dev.c.o
+[174/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_linux_async_liburing.c.o
+[175/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_async_nil.c.o
+[176/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be.c.o
+[177/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_async_emu.c.o
+[178/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_async_aio.c.o
+[179/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_mem.c.o
+[180/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_dev.c.o
+[181/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_ramdisk_admin.c.o
+[182/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_sync.c.o
+[183/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_ramdisk_dev.c.o
+[184/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_ramdisk_sync.c.o
+[185/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_vfio.c.o
+[186/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_spdk.c.o
+[187/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_posix_async_thrpool.c.o
+[188/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_vfio_admin.c.o
+[189/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_spdk_admin.c.o
+[190/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_vfio_mem.c.o
+[191/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows.c.o
+[192/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_async_iocp.c.o
+[193/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_spdk_mem.c.o
+[194/257] Compiling C object lib/libxnvme-shared.so.p/xnvmec.c.o
+[195/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_spdk_async.c.o
+[196/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_vfio_sync.c.o
+[197/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_vfio_async.c.o
+[198/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_vfio_dev.c.o
+[199/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_fs.c.o
+[200/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_spdk_sync.c.o
+[201/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_async_iocp_th.c.o
+[202/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_async_ioring.c.o
+[203/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_dev.c.o
+[204/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_nvme.c.o
+[205/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_mem.c.o
+[206/257] Compiling C object lib/libxnvme-static.a.p/xnvme_libconf_entries.c.o
+[207/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_windows_block.c.o
+[208/257] Compiling C object lib/libxnvme-static.a.p/xnvme_req.c.o
+[209/257] Compiling C object lib/libxnvme-static.a.p/xnvme_buf.c.o
+[210/257] Compiling C object lib/libxnvme-static.a.p/xnvme_cmd.c.o
+[211/257] Compiling C object lib/libxnvme-static.a.p/xnvme_geo.c.o
+[212/257] Compiling C object lib/libxnvme-static.a.p/xnvme_file.c.o
+[213/257] Compiling C object lib/libxnvme-static.a.p/xnvme_lba.c.o
+[214/257] Compiling C object lib/libxnvme-static.a.p/xnvme_ident.c.o
+[215/257] Compiling C object lib/libxnvme-static.a.p/xnvme_dev.c.o
+[216/257] Compiling C object lib/libxnvme-shared.so.p/xnvme_spec.c.o
+[217/257] Compiling C object lib/libxnvme-static.a.p/xnvme_libconf.c.o
+[218/257] Compiling C object lib/libxnvme-static.a.p/xnvme_be_spdk_dev.c.o
+[219/257] Compiling C object lib/libxnvme-static.a.p/xnvme_queue.c.o
+[220/257] Compiling C object lib/libxnvme-static.a.p/xnvme_opts.c.o
+[221/257] Compiling C object lib/libxnvme-static.a.p/xnvme_ver.c.o
+[222/257] Compiling C object lib/libxnvme-static.a.p/xnvme_nvm.c.o
+[223/257] Compiling C object lib/libxnvme-static.a.p/xnvme_spec_pp.c.o
+[224/257] Compiling C object lib/libxnvme-static.a.p/xnvme_znd.c.o
+[225/257] Compiling C object lib/libxnvme-static.a.p/xnvmec.c.o
+[226/257] Compiling C object lib/libxnvme-static.a.p/xnvme_spec.c.o
+[227/257] Linking static target lib/libxnvme-static.a
+[228/257] Linking target lib/libxnvme-shared.so
+[229/257] Generating lib/xnvme with a custom command
+[230/257] Linking target tests/xnvme_tests_scc
+[231/257] Linking target tools/lblk
+[232/257] Linking target tests/xnvme_tests_enum
+[233/257] Linking target tests/xnvme_tests_xnvme_file
+[234/257] Linking target tools/xdd
+[235/257] Linking target tests/xnvme_tests_lblk
+[236/257] Linking target tests/xnvme_tests_znd_zrwa
+[237/257] Linking target tests/xnvme_tests_znd_append
+[238/257] Linking target tests/xnvme_tests_async_intf
+[239/257] Linking target tests/xnvme_tests_ioworker
+[240/257] Linking target tests/xnvme_tests_cli
+[241/257] Linking target tests/xnvme_tests_znd_explicit_open
+[242/257] Linking target tests/xnvme_tests_znd_state
+[243/257] Linking target tests/xnvme_tests_buf
+[244/257] Linking target tools/nvmec
+[245/257] Linking target tests/xnvme_tests_xnvmec
+[246/257] Linking target tools/xnvme_file
+[247/257] Linking target tools/xnvme
+[248/257] Linking target examples/xnvme_io_async
+[249/257] Linking target tools/zoned
+[250/257] Linking target examples/xnvme_single_sync
+[251/257] Linking target examples/xnvme_enum
+[252/257] Linking target examples/xnvme_dev
+[253/257] Linking target examples/zoned_io_async
+[254/257] Linking target tools/fio-engine/libxnvme-fio-engine.so
+[255/257] Linking target examples/xnvme_hello
+[256/257] Linking target examples/zoned_io_sync
+[257/257] Linking target examples/xnvme_single_async

@@ -1,0 +1,8 @@
+begin: 1666946298.5226576
+cmd: lsb_release --all || cat /etc/os-release
+cwd: None
+elapsed: 0.8127386569976807
+end: 1666946299.3353963
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_02.output

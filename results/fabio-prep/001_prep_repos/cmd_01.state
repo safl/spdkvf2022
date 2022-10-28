@@ -1,0 +1,8 @@
+begin: 1666946036.9327981
+cmd: git --version
+cwd: None
+elapsed: 0.9680407047271729
+end: 1666946037.9008389
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_01.output

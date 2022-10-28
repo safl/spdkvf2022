@@ -1,0 +1,8 @@
+begin: 1666946102.7421846
+cmd: git rev-parse --short HEAD
+cwd: /root/git/xnvme
+elapsed: 0.7917604446411133
+end: 1666946103.533945
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme/cmd_01.output

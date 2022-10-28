@@ -1,0 +1,8 @@
+begin: 1666946304.5582936
+cmd: lslogins
+cwd: None
+elapsed: 0.837843656539917
+end: 1666946305.3961372
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_09.output

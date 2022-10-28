@@ -1,0 +1,8 @@
+begin: 1666946062.4621298
+cmd: cd /root/git/xnvme/ && ./toolbox/pkgs/debian-bullseye.sh
+cwd: None
+elapsed: 27.405500173568726
+end: 1666946089.86763
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/002_packages
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/002_packages/cmd_01.output

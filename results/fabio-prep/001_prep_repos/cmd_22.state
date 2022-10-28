@@ -1,0 +1,9 @@
+begin: 1666946057.7903316
+cmd: '[ ! -d /root/git/fio ] && git clone https://github.com/axboe/fio.git /root/git/fio
+  --recursive'
+cwd: None
+elapsed: 0.7965354919433594
+end: 1666946058.586867
+err: 1
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_22.output

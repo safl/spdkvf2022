@@ -1,0 +1,8 @@
+begin: 1666946131.4557686
+cmd: cat builddir/meson-logs/meson-log.txt
+cwd: /root/git/xnvme
+elapsed: 1.0607216358184814
+end: 1666946132.5164902
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme/cmd_08.output

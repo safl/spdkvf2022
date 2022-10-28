@@ -1,0 +1,8 @@
+begin: 1666946129.0299509
+cmd: cd builddir && meson --internal uninstall
+cwd: /root/git/xnvme
+elapsed: 1.0719294548034668
+end: 1666946130.1018803
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme/cmd_06.output

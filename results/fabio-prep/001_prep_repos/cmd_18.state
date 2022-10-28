@@ -1,0 +1,8 @@
+begin: 1666946053.7799265
+cmd: git pull --rebase
+cwd: /root/git/spdk
+elapsed: 1.2852637767791748
+end: 1666946055.0651903
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_18.output

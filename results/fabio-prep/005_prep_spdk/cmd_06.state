@@ -1,0 +1,8 @@
+begin: 1666946280.8714068
+cmd: make install
+cwd: /root/git/spdk
+elapsed: 6.69083046913147
+end: 1666946287.5622373
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk/cmd_06.output

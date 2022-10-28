@@ -1,0 +1,8 @@
+begin: 1666946058.59157
+cmd: git fetch --all
+cwd: /root/git/fio
+elapsed: 1.3067152500152588
+end: 1666946059.8982852
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_23.output

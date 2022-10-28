@@ -1,0 +1,8 @@
+begin: 1666946302.9202833
+cmd: lscpu
+cwd: None
+elapsed: 0.8145256042480469
+end: 1666946303.734809
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_07.output

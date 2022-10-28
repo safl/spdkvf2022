@@ -1,0 +1,8 @@
+begin: 1666946089.8891826
+cmd: git rev-parse --short HEAD
+cwd: /root/git/fio
+elapsed: 0.8987574577331543
+end: 1666946090.78794
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio/cmd_01.output

@@ -1,0 +1,12 @@
+begin: 1666946135.3724258
+cmd: ./configure --disable-unit-tests --enable-lto --with-fio=/root/git/fio --with-uring
+  --with-xnvme --without-crypto --without-fuse --without-idxd --without-iscsi-initiator
+  --without-nvme-cuse --without-ocf --without-pmdk --without-rbd --without-reduce
+  --without-usdt --without-vfio-user --without-vhost --without-virtio --without-vtune
+  --prefix=/opt/spdk
+cwd: /root/git/spdk
+elapsed: 8.67158317565918
+end: 1666946144.044009
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk/cmd_04.output

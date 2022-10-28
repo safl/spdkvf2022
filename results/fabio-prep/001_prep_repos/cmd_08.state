@@ -1,0 +1,8 @@
+begin: 1666946043.6563768
+cmd: mkdir -p /root/git
+cwd: None
+elapsed: 0.8152346611022949
+end: 1666946044.4716115
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_08.output

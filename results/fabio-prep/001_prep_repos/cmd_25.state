@@ -1,0 +1,8 @@
+begin: 1666946060.7887166
+cmd: git submodule update --init --recursive
+cwd: /root/git/fio
+elapsed: 0.8228340148925781
+end: 1666946061.6115506
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_25.output

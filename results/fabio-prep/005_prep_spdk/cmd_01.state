@@ -1,0 +1,8 @@
+begin: 1666946132.5382166
+cmd: git rev-parse --short HEAD
+cwd: /root/git/spdk
+elapsed: 0.8098387718200684
+end: 1666946133.3480554
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk/cmd_01.output

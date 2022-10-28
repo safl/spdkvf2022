@@ -1,0 +1,8 @@
+begin: 1666946056.0438817
+cmd: git status
+cwd: /root/git/spdk
+elapsed: 0.9442634582519531
+end: 1666946056.988145
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_20.output

@@ -1,0 +1,8 @@
+begin: 1666946047.946929
+cmd: git submodule update --init --recursive
+cwd: /root/git/xnvme
+elapsed: 0.8602826595306396
+end: 1666946048.8072116
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_12.output

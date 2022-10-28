@@ -1,0 +1,9 @@
+begin: 1666946050.6090763
+cmd: '[ ! -d /root/git/spdk ] && git clone https://github.com/safl/spdk.git /root/git/spdk
+  --recursive'
+cwd: None
+elapsed: 0.8043155670166016
+end: 1666946051.4133918
+err: 1
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_15.output

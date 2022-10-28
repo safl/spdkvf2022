@@ -1,0 +1,8 @@
+begin: 1666946103.537788
+cmd: rm -r builddir || true
+cwd: /root/git/xnvme
+elapsed: 0.8176581859588623
+end: 1666946104.355446
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme/cmd_02.output

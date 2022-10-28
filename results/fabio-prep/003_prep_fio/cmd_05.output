@@ -1,0 +1,9 @@
+install -m 755 -d /opt/fio/bin
+install fio t/fio-genzipf t/fio-btrace2fio t/fio-dedupe t/fio-verify-state ./tools/fio_generate_plots ./tools/plot/fio2gnuplot ./tools/genfio ./tools/fiologparser.py ./tools/hist/fiologparser_hist.py ./tools/hist/fio-histo-log-pctiles.py ./tools/fio_jsonplus_clat2csv /opt/fio/bin
+install -m 755 -d /opt/fio/man/man1
+install -m 644 ./fio.1 /opt/fio/man/man1
+install -m 644 ./tools/fio_generate_plots.1 /opt/fio/man/man1
+install -m 644 ./tools/plot/fio2gnuplot.1 /opt/fio/man/man1
+install -m 644 ./tools/hist/fiologparser_hist.py.1 /opt/fio/man/man1
+install -m 755 -d /opt/fio/share/fio
+install -m 644 ./tools/plot/*gpm /opt/fio/share/fio/

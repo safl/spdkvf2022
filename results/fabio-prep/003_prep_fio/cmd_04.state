@@ -1,0 +1,8 @@
+begin: 1666946096.8740788
+cmd: make -j $(nproc)
+cwd: /root/git/fio
+elapsed: 4.933616876602173
+end: 1666946101.8076956
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio/cmd_04.output

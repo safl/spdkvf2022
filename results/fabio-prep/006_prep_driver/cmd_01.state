@@ -1,0 +1,8 @@
+begin: 1666946287.5820878
+cmd: xnvme-driver || true
+cwd: None
+elapsed: 7.7773277759552
+end: 1666946295.3594155
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/006_prep_driver
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/006_prep_driver/cmd_01.output

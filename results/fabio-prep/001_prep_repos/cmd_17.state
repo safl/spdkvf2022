@@ -1,0 +1,8 @@
+begin: 1666946052.7721183
+cmd: git checkout for_bdev_xnvme_v6
+cwd: /root/git/spdk
+elapsed: 1.0028619766235352
+end: 1666946053.7749803
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_17.output

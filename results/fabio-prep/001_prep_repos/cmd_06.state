@@ -1,0 +1,8 @@
+begin: 1666946041.9330175
+cmd: git submodule update --init --recursive
+cwd: /root/git/liburing
+elapsed: 0.8418452739715576
+end: 1666946042.7748628
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_06.output

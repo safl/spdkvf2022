@@ -1,0 +1,8 @@
+begin: 1666946127.623686
+cmd: cd builddir && meson install
+cwd: /root/git/xnvme
+elapsed: 1.4031174182891846
+end: 1666946129.0268035
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/004_prep_xnvme/cmd_05.output

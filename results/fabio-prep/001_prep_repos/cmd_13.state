@@ -1,0 +1,8 @@
+begin: 1666946048.8109066
+cmd: git status
+cwd: /root/git/xnvme
+elapsed: 0.8580536842346191
+end: 1666946049.6689603
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_prep_repos/cmd_13.output

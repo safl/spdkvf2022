@@ -1,0 +1,8 @@
+begin: 1666946144.0481987
+cmd: make -j $(nproc)
+cwd: /root/git/spdk
+elapsed: 136.82121205329895
+end: 1666946280.8694108
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk/cmd_05.output

@@ -1,0 +1,8 @@
+begin: 1666946134.286588
+cmd: git submodule update --init --recursive
+cwd: /root/git/spdk
+elapsed: 1.082705020904541
+end: 1666946135.369293
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_prep_spdk/cmd_03.output

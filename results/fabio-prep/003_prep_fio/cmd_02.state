@@ -1,0 +1,8 @@
+begin: 1666946090.7912555
+cmd: make clean
+cwd: /root/git/fio
+elapsed: 1.0908513069152832
+end: 1666946091.8821068
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_prep_fio/cmd_02.output

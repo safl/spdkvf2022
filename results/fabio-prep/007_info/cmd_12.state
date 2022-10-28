@@ -1,0 +1,8 @@
+begin: 1666946307.031473
+cmd: lspci
+cwd: None
+elapsed: 0.9014923572540283
+end: 1666946307.9329653
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_info
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_info/cmd_12.output

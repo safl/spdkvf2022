@@ -46,7 +46,7 @@ IOPATHS = {
         "io_mechanism": "libaio",
         "method": "bdev_xnvme_create",
     },
-    "xnmve_io_uring": {
+    "xnvme_io_uring": {
         "bdev_name": "bdev_xnvme",
         "io_mechanism": "io_uring",
         "method": "bdev_xnvme_create",

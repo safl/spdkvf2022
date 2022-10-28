@@ -59,7 +59,6 @@ def worklet_entry(args, cijoe, step):
             "bdev_name": "bdev_xnvme",
             "io_mechanism": "io_uring_cmd",
         },
-
         "io_uring-bdev_uring": {
             "bdev_name": "bdev_uring",
             "io_mechanism": "io_uring",
@@ -68,7 +67,6 @@ def worklet_entry(args, cijoe, step):
             "bdev_name": "bdev_xnvme",
             "io_mechanism": "io_uring",
         },
-
         "libaio-bdev_aio": {
             "bdev_name": "bdev_aio",
             "io_mechanism": "libaio",
@@ -93,8 +91,12 @@ def worklet_entry(args, cijoe, step):
             )
 
             # Create a spdk-configuration file and transfer it
-            spdk_conf_path = "_".join(
-                [bdev_conf_root, params["bdev_name"], params["io_mechanism"], "1"
+            spdk_conf_path = Path(bdev_conf_root) / "_".join(
+                [
+                    params["bdev_name"],
+                    params["io_mechanism"],
+                    "1.conf",
+                ]
             )
 
             # Run bdevperf

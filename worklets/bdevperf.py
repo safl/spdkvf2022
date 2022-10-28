@@ -10,8 +10,8 @@ import traceback
 from itertools import product
 from pathlib import Path
 
+"""
 from cijoe.fio.wrapper import fio_fancy
-
 
 def spdk_opts_to_spdk_conf(spdk_opts, parent):
 
@@ -44,80 +44,38 @@ def spdk_opts_to_spdk_conf(spdk_opts, parent):
 
     return conf_filestem, spdk_conf_path, spdk_conf
 
+"""
+
 
 def worklet_entry(args, cijoe, step):
 
     repetitions = step.get("with", {}).get("repetitions", 3)
     iosizes = step.get("with", {}).get("iosizes", ["4K"])
     iodepths = step.get("with", {}).get("iodepths", [1, 2, 4, 8])
+    bdev_conf_root = step.get("with", {}).get("bdev_confs", "/tmp")
 
-    cdev = {"uri": "/dev/ng0n1", "nsid": 1, "labels": ["cdev"]}
-    bdev = {"uri": "/dev/nvme0n1", "nsid": 1, "labels": ["bdev"]}
-    pcie = {"uri": "0000:01:00.0", "nsid": 1, "labels": ["pcie"]}
-
-    implementation = {
+    iopaths = {
         "io_uring_cmd-bdev_xnvme": {
-            "engine": "spdk_bdev",
-            "device": cdev,
-            "xnvme_opts": {},
-            "spdk_opts": {
-                "bdev": "xnvme",
-                "params": {
-                    "filename": cdev["uri"],
-                    "name": "Nvme0n1",
-                    "io_mechanism": "io_uring_cmd",
-                    # "conserve_cpu": False,
-                    # "conserve_cpu": True,
-                },
-            },
+            "bdev_name": "bdev_xnvme",
+            "io_mechanism": "io_uring_cmd",
         },
+
         "io_uring-bdev_uring": {
-            "engine": "spdk_bdev",
-            "device": bdev,
-            "xnvme_opts": {},
-            "spdk_opts": {
-                "bdev": "uring",
-                "params": {"filename": bdev["uri"], "name": "Nvme0n1"},
-            },
+            "bdev_name": "bdev_uring",
+            "io_mechanism": "io_uring",
         },
         "io_uring-bdev_xnvme": {
-            "engine": "spdk_bdev",
-            "device": bdev,
-            "xnvme_opts": {},
-            "spdk_opts": {
-                "bdev": "xnvme",
-                "params": {
-                    "filename": bdev["uri"],
-                    "name": "Nvme0n1",
-                    "io_mechanism": "io_uring",
-                    # "conserve_cpu": False,
-                    # "conserve_cpu": True,
-                },
-            },
+            "bdev_name": "bdev_xnvme",
+            "io_mechanism": "io_uring",
         },
+
         "libaio-bdev_aio": {
-            "engine": "spdk_bdev",
-            "device": bdev,
-            "xnvme_opts": {},
-            "spdk_opts": {
-                "bdev": "aio",
-                "params": {"filename": bdev["uri"], "name": "Nvme0n1"},
-            },
+            "bdev_name": "bdev_aio",
+            "io_mechanism": "libaio",
         },
         "libaio-bdev_xnvme": {
-            "engine": "spdk_bdev",
-            "device": bdev,
-            "xnvme_opts": {},
-            "spdk_opts": {
-                "bdev": "xnvme",
-                "params": {
-                    "filename": bdev["uri"],
-                    "name": "Nvme0n1",
-                    "io_mechanism": "libaio",
-                    # "conserve_cpu": False,
-                    # "conserve_cpu": True,
-                },
-            },
+            "bdev_name": "bdev_xnvme",
+            "io_mechanism": "libaio",
         },
     }
 
@@ -127,7 +85,7 @@ def worklet_entry(args, cijoe, step):
     err = 0
     try:
         for (bs, iodepth, (label, params), rep) in product(
-            iosizes, iodepths, implementation.items(), range(repetitions)
+            iosizes, iodepths, iopaths.items(), range(repetitions)
         ):
             bdevperf_output_path = (
                 artifacts
@@ -135,11 +93,9 @@ def worklet_entry(args, cijoe, step):
             )
 
             # Create a spdk-configuration file and transfer it
-            stem, spdk_conf_path, conf = spdk_opts_to_spdk_conf(
-                params["spdk_opts"], "/tmp"
+            spdk_conf_path = "_".join(
+                [bdev_conf_root, params["bdev_name"], params["io_mechanism"], "1"
             )
-            cijoe.run(f"rm {spdk_conf_path} || true")
-            cijoe.put(spdk_conf_path, spdk_conf_path)
 
             # Run bdevperf
             command = [

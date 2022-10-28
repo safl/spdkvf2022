@@ -2,6 +2,7 @@
 from pathlib import Path
 import pprint
 import json
+import os
 
 SYSTEMS = {
     "gen3": [
@@ -101,12 +102,13 @@ def main():
                 })
                 conf["subsystems"].append(bdevs)
 
-                filename = Path("_".join([
-                    f"{sys_label}",
+                os.makedirs(f"{sys_label}", exist_ok=True)
+
+                filename = Path(f"{sys_label}") / "_".join([
                     f"{iopath['bdev_name']}",
                     f"{iopath['io_mechanism']}",
                     f"{count}.conf"
-                ]))
+                    ])
 
                 with filename.open("w") as config:
                     json.dump(conf, config, indent=2, sort_keys=False)

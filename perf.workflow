@@ -21,6 +21,7 @@ steps:
     repetitions: 1
     iosizes: ['512']
     iodepths: [1, 128]
+    bdev_confs: /root/bdevconfs
 
 - name: plot_bdevperf
   uses: plot

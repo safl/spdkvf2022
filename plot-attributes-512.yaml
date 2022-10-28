@@ -3,7 +3,7 @@ limits:
   barplot:
     y_lim: [0, 195000]
   lineplot:
-    y_lim: [0, 1200000]
+    y_lim: [0, 1500000]
 
 # Identifying colors and markers by dataset-label
 datasets:

@@ -82,7 +82,7 @@ def main():
                     params["filename"] = f"/dev/nvme{dev_info['os']}"
 
                 # Parameters, then an instance name
-                bdev_name_instance = "_".join(
+                params["name"] = "_".join(
                     [
                         f"{iopath['bdev_name']}",
                         f"{iopath['io_mechanism']}",

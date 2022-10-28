@@ -22,6 +22,7 @@ steps:
     iosizes: ['512']
     iodepths: [1, 128]
     bdev_confs: /root/bdevconfs
+    ndevices: 7
 
 - name: plot_bdevperf
   uses: plot

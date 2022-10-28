@@ -1,0 +1,9 @@
+begin: 1666794864.4565387
+cmd: /root/git/spdk/test/bdev/bdevperf/bdevperf --json /tmp/spdk_bdev_aio_foo.conf
+  -q 128 -o 512 -w randread -t 10 -m '[0]'
+cwd: None
+elapsed: 11.135881185531616
+end: 1666794875.5924199
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf/cmd_18.output

@@ -1,0 +1,8 @@
+begin: 1666795118.0111222
+cmd: rm /tmp/fio-output_512_128_io_uring-bdev_xnvme_0.txt
+cwd: None
+elapsed: 0.768164873123169
+end: 1666795118.779287
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_49.output

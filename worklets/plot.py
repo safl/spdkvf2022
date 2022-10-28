@@ -282,7 +282,7 @@ def lineplot(args, cijoe, step):
     )
     plot_attributes = dict_from_yamlfile(plot_attributes_path)
 
-    groups = ["io_uring_cmd", "io_uring", "libaio"]
+    groups = ["io_uring_cmd", "io_uring", "libaio", "ioctl"]
     x = "iodepth"
     y = "iops"
 
@@ -342,7 +342,7 @@ def barplot(args, cijoe, step):
     )
     plot_attributes = dict_from_yamlfile(plot_attributes_path)
 
-    groups = ["io_uring_cmd", "io_uring", "libaio"]
+    groups = ["io_uring_cmd", "io_uring", "libaio", "ioctl"]
     y = "iops"
     x = "iodepth"
     xval = "1"

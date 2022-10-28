@@ -1,0 +1,8 @@
+begin: 1666782840.9795122
+cmd: cat /tmp/fio-output_512_2_libaio-reference_0.txt
+cwd: None
+elapsed: 0.7958464622497559
+end: 1666782841.7753587
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_165.output

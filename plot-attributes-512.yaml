@@ -1,9 +1,9 @@
 # Limits on plots, this is to ensure that different plots are visually comparable
 limits:
   barplot:
-    y_lim: [0, 165000]
+    y_lim: [0, 185000]
   lineplot:
-    y_lim: [0, 700000]
+    y_lim: [0, 1200000]
 
 # Identifying colors and markers by dataset-label
 datasets:
@@ -61,6 +61,11 @@ datasets:
     hatch: "O"
 
   io_uring-bdev_uring:
+    color: "#807dba"
+    marker: "d" # thin_diamond
+    hatch: "O"
+
+  ioctl-xnvme:
     color: "#807dba"
     marker: "d" # thin_diamond
     hatch: "O"

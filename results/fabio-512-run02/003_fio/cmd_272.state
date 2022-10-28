@@ -1,0 +1,12 @@
+begin: 1666783349.307994
+cmd: /opt/fio/bin/fio --name="libaio-bdev_aio" --rw="randread" --size="12G" --iodepth="4"
+  --bs="512" --direct="1" --thread="1" --time_based="1" --runtime="7" --ramp_time="3"
+  --norandommap="1" --allow_file_create="0" --ioengine="spdk_bdev" --spdk_conf="/tmp/spdk_bdev_aio_foo.conf"
+  --filename="Nvme0n1" --output-format="normal,json" --output="/tmp/fio-output_512_4_libaio-bdev_aio_0.txt"
+  --cpus_allowed="1"
+cwd: None
+elapsed: 11.4180166721344
+end: 1666783360.7260106
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_272.output

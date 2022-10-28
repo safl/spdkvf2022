@@ -1,0 +1,8 @@
+begin: 1666781405.5125322
+cmd: rm /tmp/spdk_bdev_aio_foo.conf || true
+cwd: None
+elapsed: 0.7970554828643799
+end: 1666781406.3095877
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf/cmd_23.output

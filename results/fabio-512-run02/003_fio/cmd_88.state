@@ -1,0 +1,8 @@
+begin: 1666782470.2117727
+cmd: rm /tmp/fio-output_512_1_libaio-bdev_xnvme_2.txt
+cwd: None
+elapsed: 0.8008444309234619
+end: 1666782471.012617
+err: 1
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_88.output

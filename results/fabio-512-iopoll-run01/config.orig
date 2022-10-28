@@ -1,0 +1,210 @@
+# filetype=yaml
+---
+transport:
+  ssh:  # The SSH options are passed verbatim to paramiko; see https://www.paramiko.org/
+    hostname: fabio
+    port: 22
+    username: root
+
+os:
+  name: 'debian'
+  version: 'bullseye'
+
+devices:
+- uri: "/dev/nvme0n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme1n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme2n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme3n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme4n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme5n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme6n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/nvme7n1"
+  nsid: 1
+  labels: ["dev", "bdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng0n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng1n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng2n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng3n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng4n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng5n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng6n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "/dev/ng7n1"
+  nsid: 1
+  labels: ["dev", "cdev", "nvm", "scc"]
+  driver_attachment: "kernel"
+  spdk_conf:
+
+- uri: "0000:41:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:42:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:43:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:44:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:45:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:46:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:47:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+- uri: "0000:48:00.0"
+  nsid: 1
+  labels: ["dev", "pcie", "nvm", "scc"]
+  driver_attachment: "userspace"
+  spdk_conf:
+
+liburing:
+  repository:
+    remote: "https://github.com/axboe/liburing.git"
+    path: "/root/git/liburing"
+    tag: "liburing-2.2"
+
+xnvme:
+  repository:
+    remote: "https://github.com/OpenMPDK/xNVMe.git"
+    path: "/root/git/xnvme"
+    tag: "v0.6.0"
+
+  build:
+    type: "debug"
+
+spdk:
+  repository:
+    remote: "https://github.com/safl/spdk.git"
+    path: "/root/git/spdk"
+    branch: "for_bdev_xnvme_v6"
+
+  build:
+    prefix: "/opt/spdk"
+
+fio:
+  repository:
+    remote: "https://github.com/axboe/fio.git"
+    path: "/root/git/fio"
+    tag: "fio-3.32"
+
+  build:
+    prefix: "/opt/fio"
+
+  bin: "/opt/fio/bin/fio"
+
+  engines:
+    libaio:
+      type: builtin
+    io_uring:
+      type: builtin
+    io_uring_cmd:
+      type: builtin
+
+    xnvme:
+      path: /usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so
+      type: external_dynamic
+
+    spdk_nvme:
+      path: /root/git/spdk/build/fio/spdk_nvme
+      type: external_preload
+    spdk_bdev:
+      path: /root/git/spdk/build/fio/spdk_bdev
+      type: external_preload

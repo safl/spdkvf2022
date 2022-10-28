@@ -1,0 +1,11 @@
+Running I/O for 10 seconds...
+ Job: Nvme0n1 (Core Mask 0x1)
+	 Nvme0n1             :  101427.07 IOPS      49.52 MiB/s
+ =============================================================
+ Total                       :  101427.07 IOPS      49.52 MiB/s
+[2022-10-26 18:31:43.724753] Starting SPDK v23.01-pre git sha1 fd41a2937 / DPDK 22.07.0 initialization...
+[2022-10-26 18:31:43.724805] [ DPDK EAL parameters: [2022-10-26 18:31:43.724813] bdevperf [2022-10-26 18:31:43.724819] --no-shconf [2022-10-26 18:31:43.724825] -l 0 [2022-10-26 18:31:43.724831] --huge-unlink [2022-10-26 18:31:43.724837] --log-level=lib.eal:6 [2022-10-26 18:31:43.724843] --log-level=lib.cryptodev:5 [2022-10-26 18:31:43.724848] --log-level=user1:6 [2022-10-26 18:31:43.724855] --iova-mode=pa [2022-10-26 18:31:43.724861] --base-virtaddr=0x200000000000 [2022-10-26 18:31:43.724867] --match-allocations [2022-10-26 18:31:43.724873] --file-prefix=spdk_pid45003 [2022-10-26 18:31:43.724878] ]
+TELEMETRY: No legacy callbacks, legacy socket not created
+[2022-10-26 18:31:43.847295] app.c: 586:spdk_app_start: *NOTICE*: Total cores available: 1
+[2022-10-26 18:31:43.891129] reactor.c: 926:reactor_run: *NOTICE*: Reactor started on core 0
+[2022-10-26 18:31:43.891688] accel_sw.c: 461:sw_accel_module_init: *NOTICE*: Accel framework software module initialized.

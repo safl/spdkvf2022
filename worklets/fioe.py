@@ -142,10 +142,25 @@ def worklet_entry(args, cijoe, step):
         },
     }
 
+    impl_ioctl = {
+        "ioctl-xnvme": {
+            "engine": "xnvme",
+            "device": cdev,
+            "xnvme_opts": {
+                "be": "linux",
+                "async": "thrpool",
+                "sync": "nvme",
+                "admin": "nvme",
+            },
+            "spdk_opts": {},
+        },
+    }
+
     implementation = {}
     implementation.update(impl_io_uring_cmd)
     implementation.update(impl_io_uring)
     implementation.update(impl_libaio)
+    implementation.update(impl_ioctl)
 
     err = 0
     try:
@@ -166,7 +181,7 @@ def worklet_entry(args, cijoe, step):
                     "iodepth": str(iodepth),
                     "name": label,
                     "cpus_allowed": "1",
-                }
+                },
             )
     except Exception as exc:
         log.error(f"Something failed({exc})")

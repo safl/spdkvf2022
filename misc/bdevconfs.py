@@ -28,7 +28,7 @@ SYSTEMS = {
 IOPATHS = {
     "driver": {
         "bdev_name": "bdev_nvme",
-        "io_mechanism": "nvme",
+        "io_mechanism": "spdk_nvme",
         "method": "bdev_nvme_attach_controller",
     },
     "aio": {
@@ -71,9 +71,8 @@ def main():
                     "config": [],
                 }
 
+                # Parameters, first the device "handle"
                 params = {}
-
-                # Setup the "handle"
                 if "driver" in iopath_label:
                     params["trtype"] = "PCIe"
                     params["traddr"] = f"{dev_info['pcie']}"
@@ -82,45 +81,35 @@ def main():
                 else:
                     params["filename"] = f"/dev/nvme{dev_info['os']}"
 
-                # Set "extras" for xNVMe
-                if "xnvme" in iopath_label:
-                    params["io_mechanism"] = f"{dev_info['io_mechanism']}"
-                    # params["conserve_cpu"] = False
-
+                # Parameters, then an instance name
                 bdev_name_instance = "_".join(
                     [
-                        "bdev",
-                        f"{bdev_name}",
-                        f"{io_mechanism}",
+                        f"{iopath['bdev_name']}",
+                        f"{iopath['io_mechanism']}",
                         f"device{dev_info['os']}",
                     ]
                 )
 
-                if io_mechanism == "io_uring":
-                    filename = f"/dev/nvme{dev_info['os']}"
-                elif io_mechanism == "io_uring_cmd":
-                    filename = f"/dev/ng{dev_info['os']}"
+                # Parameters, for xNVMe
+                if "xnvme" in iopath_label:
+                    params["io_mechanism"] = f"{iopath['io_mechanism']}"
+                    # params["conserve_cpu"] = False
 
-                bdev = {
-                    "params": {
-                        "filename": filename,
-                        "name": bdev_name_instance,
-                        "io_mechanism": f"{io_mechanism}",
-                        "conserve_cpu": False,
-                    },
+                bdevs["config"].append({
+                    "params": params,
                     "method": iopath["method"],
-                }
-
-                bdevs["config"].append(bdev)
-
+                })
                 conf["subsystems"].append(bdevs)
 
-                filename = Path(
-                    f"{sys_label}_bdev_{bdev_name}_{io_mechanism}_{count}.json"
-                )
+                filename = Path("_".join([
+                    f"{sys_label}",
+                    f"{iopath['bdev_name']}",
+                    f"{iopath['io_mechanism']}",
+                    f"{count}.conf"
+                ]))
 
-                print(filename)
-                pprint.pprint(conf)
+                with filename.open("w") as config:
+                    json.dump(conf, config, indent=2, sort_keys=False)
 
 
 if __name__ == "__main__":

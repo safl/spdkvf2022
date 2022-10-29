@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from pathlib import Path
+import re
 
 PARAMS_DEFAULT = {
     "d": "128",  # <int>  IO Depth, default 128
@@ -40,7 +42,8 @@ def worklet_entry(args, cijoe, step):
     for device_info in cijoe.config.options.get("duts"):
         params = PARAMS_DEFAULT.copy()
 
-        params["r"] = runtime
+        # params["r"] = runtime
+        params["r"] = 2
 
         handle = f"/dev/nvme{device_info['os']}"
         if io_mechanism == "io_uring_cmd":
@@ -70,6 +73,17 @@ def worklet_entry(args, cijoe, step):
             ]
         )
 
-        err, _ = cijoe.run(cmd)
+        iops = []
+        for _ in range(3):
+            err, state = cijoe.run(cmd)
+            output = state.output()
+
+            match = re.match(".*IOPS=(?P<iops>.*)M.*", output, re.MULTILINE | re.DOTALL)
+            if match:
+                iops.append(float(match.group("iops")))
+
+        cijoe.run(
+            f'echo "mode({mode}), #ndevices({len(handles)}), best of three({max(iops)}) "'
+        )
 
     return 0

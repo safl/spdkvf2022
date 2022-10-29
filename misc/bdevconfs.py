@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 from pathlib import Path
 import pprint
 import json
@@ -60,7 +61,7 @@ IOPATHS = {
 }
 
 
-def main():
+def gen_bdev_confs(args):
 
     for iopath_label, iopath in IOPATHS.items():
         for sys_label, devices in SYSTEMS.items():
@@ -104,9 +105,10 @@ def main():
                 )
                 conf["subsystems"].append(bdevs)
 
-                os.makedirs(f"{sys_label}", exist_ok=True)
+                output_dir = args.output / f"{sys_label}"
+                os.makedirs(output_dir, exist_ok=True)
 
-                filename = Path(f"{sys_label}") / "_".join(
+                filename = output_dir / "_".join(
                     [
                         f"{iopath['bdev_name']}",
                         f"{iopath['io_mechanism']}",
@@ -116,6 +118,51 @@ def main():
 
                 with filename.open("w") as config:
                     json.dump(conf, config, indent=2, sort_keys=False)
+
+
+def gen_commands(args):
+
+
+    command = "taskset -c 0,1 t/io_uring -b512 -d128 -c16 -s16 -p1 -F1 -B1 -n2
+    -r10"
+    pass
+
+
+def parse_args():
+
+    parser = argparse.ArgumentParser(
+        prog="stuff", formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+
+    parser.add_argument(
+        "--bdev-confs",
+        action="store_true",
+        help="Monitor workflow-output at '-o / --output'.",
+    )
+    parser.add_argument(
+        "--commands",
+        action="store_true",
+        help="Monitor workflow-output at '-o / --output'.",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default="/tmp",
+        help="Path to the Configuration file.",
+    )
+
+    return parser.parse_args()
+
+
+def main():
+
+    args = parse_args()
+
+    if args.bdev_confs:
+        gen_bdev_confs(args)
+
+    if args.commands:
+        gen_commands(args)
 
 
 if __name__ == "__main__":

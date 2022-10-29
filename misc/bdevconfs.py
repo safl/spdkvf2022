@@ -122,9 +122,7 @@ def gen_bdev_confs(args):
 
 def gen_commands(args):
 
-
-    command = "taskset -c 0,1 t/io_uring -b512 -d128 -c16 -s16 -p1 -F1 -B1 -n2
-    -r10"
+    command = "taskset -c 0,1 t/io_uring -b512 -d128 -c16 -s16 -p1 -F1 -B1 -n2 -r10"
     pass
 
 

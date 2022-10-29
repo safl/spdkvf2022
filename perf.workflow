@@ -15,6 +15,12 @@ doc: |
   See Artifacts for the generated plots
 
 steps:
+- name: t_io_uring
+  uses: t_io_uring
+  with:
+    mode: 'default'
+    mode: 'io_uring'
+
 - name: bdevperf
   uses: bdevperf
   with:

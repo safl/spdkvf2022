@@ -23,6 +23,7 @@ PARAMS_DEFAULT = {
     "u": "0",  # <bool> Use nvme-passthrough I/O, default 0
 }
 
+
 def worklet_entry(cijoe, args, step):
 
     mode = step.get("with", {}).get("mode", "default")
@@ -40,11 +41,11 @@ def worklet_entry(cijoe, args, step):
 
         handles.append(handle)
 
-        if mode == "default":           # Default: n threads for n devices
+        if mode == "default":  # Default: n threads for n devices
             params["n"] = len(handles)
-        elif mode == "tweak_n1":        # Tweak: 1 thread for n devices
+        elif mode == "tweak_n1":  # Tweak: 1 thread for n devices
             params["n"] = "1"
-        elif mode == "tweak_n2":        # Tweak: 2 threads for n devices
+        elif mode == "tweak_n2":  # Tweak: 2 threads for n devices
             params["n"] = "2"
         elif mode == "tweak_n2_batch":  # Tweak: 2 threads for n devices + reduce batch
             params["n"] = "2"

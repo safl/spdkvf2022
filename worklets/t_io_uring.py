@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 PARAMS_DEFAULT = {
     "d": "128",  # <int>  IO Depth, default 128
     "s": "32",  # <int>  Batch submit, default 32
@@ -21,36 +23,13 @@ PARAMS_DEFAULT = {
     "u": "0",  # <bool> Use nvme-passthrough I/O, default 0
 }
 
-SYSTEMS = {
-    "gen3": [
-        {"pcie": "0000:41:00.0", "os": "0n1", "label": "M10_16GB"},
-        {"pcie": "0000:42:00.0", "os": "1n1", "label": "M10_16GB"},
-        {"pcie": "0000:43:00.0", "os": "2n1", "label": "M10_16GB"},
-        {"pcie": "0000:44:00.0", "os": "3n1", "label": "M10_16GB"},
-        {"pcie": "0000:45:00.0", "os": "4n1", "label": "980PRO_2TB"},
-        {"pcie": "0000:46:00.0", "os": "5n1", "label": "980PRO_2TB"},
-        {"pcie": "0000:47:00.0", "os": "6n1", "label": "980PRO_2TB"},
-        {"pcie": "0000:48:00.0", "os": "7n1", "label": "980PRO_2TB"},
-    ],
-    "gen4": [
-        {"pcie": "0000:05:00.0", "os": "3n1", "label": "M10_16GB"},
-        {"pcie": "0000:07:00.0", "os": "4n1", "label": "M10_16GB"},
-        {"pcie": "0000:01:00.0", "os": "0n1", "label": "M10_16GB"},
-        {"pcie": "0000:09:00.0", "os": "5n1", "label": "980PRO_512GB"},
-        {"pcie": "0000:0a:00.0", "os": "6n1", "label": "980PRO_1TB"},
-        {"pcie": "0000:02:00.0", "os": "1n1", "label": "980PRO_1TB"},
-        {"pcie": "0000:03:00.0", "os": "2n1", "label": "980PRO_1TB"},
-    ],
-}
-
-
 def worklet_entry(cijoe, args, step):
 
     mode = step.get("with", {}).get("mode", "default")
     io_mechanism = step.get("with", {}).get("mode", "io_mechanism")
 
     handles = []
-    for device_info in SYSTEMS["gen4"]:
+    for device_info in cijoe.config.options.get("duts"):
         params = PARAMS_DEFAULT.copy()
 
         handle = "/nvme{device_info['os']}"

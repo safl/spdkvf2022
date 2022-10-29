@@ -24,18 +24,27 @@ PARAMS_DEFAULT = {
 }
 
 
-def worklet_entry(cijoe, args, step):
+def worklet_entry(args, cijoe, step):
 
     mode = step.get("with", {}).get("mode", "default")
-    io_mechanism = step.get("with", {}).get("mode", "io_mechanism")
+    io_mechanism = step.get("with", {}).get("io_mechanism", "io_uring")
+    runtime = str(step.get("with", {}).get("runtime", 10))
+
+    fio_repos = (
+        cijoe.config.options.get("fio", {}).get("repository", {}).get("path", None)
+    )
+    if not fio_repos:
+        return 0
 
     handles = []
     for device_info in cijoe.config.options.get("duts"):
         params = PARAMS_DEFAULT.copy()
 
-        handle = "/nvme{device_info['os']}"
+        params["r"] = runtime
+
+        handle = f"/dev/nvme{device_info['os']}"
         if io_mechanism == "io_uring_cmd":
-            handle = "/ng{device_info['os']}"
+            handle = f"/dev/ng{device_info['os']}"
             params["u"] = "1"
             params["O"] = "0"
 
@@ -55,9 +64,12 @@ def worklet_entry(cijoe, args, step):
         cmd = " ".join(
             [
                 "taskset -c 0,1",
-                " ".join([f"-{k}{v}" for k, v in params]),
+                str(Path(fio_repos) / "t" / "io_uring"),
+                " ".join([f"-{k}{v}" for k, v in params.items()]),
                 " ".join(handles),
             ]
         )
 
         err, _ = cijoe.run(cmd)
+
+    return 0

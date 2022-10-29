@@ -1,0 +1,121 @@
+config: {}
+doc: Run the one-core-peak.sh and variations
+status:
+  elapsed: 2156.5562813282013
+  failed: 0
+  passed: 8
+  skipped: 0
+  started: 1667080154.393597
+steps:
+- description: Undocumented
+  id: 001_block_default
+  name: block_default
+  nr: 1
+  status:
+    elapsed: 269.1296811103821
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring
+    mode: default
+- description: Undocumented
+  id: 002_block_thread1
+  name: block_thread1
+  nr: 2
+  status:
+    elapsed: 269.0057580471039
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring
+    mode: tweak_n1
+- description: Undocumented
+  id: 003_block_thread2
+  name: block_thread2
+  nr: 3
+  status:
+    elapsed: 268.2496922016144
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring
+    mode: tweak_n2
+- description: Undocumented
+  id: 004_block_n2batch
+  name: block_n2batch
+  nr: 4
+  status:
+    elapsed: 268.8680639266968
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring
+    mode: tweak_n2_batch
+- description: Undocumented
+  id: 005_chard_default
+  name: chard_default
+  nr: 5
+  status:
+    elapsed: 270.2625868320465
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring_cmd
+    mode: default
+- description: Undocumented
+  id: 006_chard_thread1
+  name: chard_thread1
+  nr: 6
+  status:
+    elapsed: 270.6898832321167
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring_cmd
+    mode: tweak_n1
+- description: Undocumented
+  id: 007_chard_thread2
+  name: chard_thread2
+  nr: 7
+  status:
+    elapsed: 269.79794001579285
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring_cmd
+    mode: tweak_n2
+- description: Undocumented
+  id: 008_chard_n2batch
+  name: chard_n2batch
+  nr: 8
+  status:
+    elapsed: 270.5526759624481
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    io_mechanism: io_uring_cmd
+    mode: tweak_n2_batch

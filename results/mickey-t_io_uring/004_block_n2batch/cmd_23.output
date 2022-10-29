@@ -1,0 +1,17 @@
+submitter=0, tid=12110, file=/dev/nvme4n1, node=-1
+submitter=1, tid=12111, file=/dev/nvme5n1, node=-1
+polled=1, fixedbufs=1/0, register_files=1, buffered=0, QD=128
+Engine=io_uring, sq_ring=128, cq_ring=128
+polled=1, fixedbufs=1/0, register_files=1, buffered=0, QD=128
+Engine=io_uring, sq_ring=128, cq_ring=128
+IOPS=3.93M, BW=1917MiB/s, IOS/call=16/15
+IOPS=3.96M, BW=1935MiB/s, IOS/call=16/16
+IOPS=3.97M, BW=1937MiB/s, IOS/call=16/15
+IOPS=3.97M, BW=1938MiB/s, IOS/call=16/15
+IOPS=3.97M, BW=1937MiB/s, IOS/call=16/16
+IOPS=3.97M, BW=1938MiB/s, IOS/call=15/15
+IOPS=3.97M, BW=1938MiB/s, IOS/call=16/15
+IOPS=3.97M, BW=1938MiB/s, IOS/call=15/15
+IOPS=3.97M, BW=1938MiB/s, IOS/call=16/15
+Exiting on timeout
+Maximum IOPS=3.97M

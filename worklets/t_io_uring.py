@@ -42,8 +42,7 @@ def worklet_entry(args, cijoe, step):
     for device_info in cijoe.config.options.get("duts"):
         params = PARAMS_DEFAULT.copy()
 
-        # params["r"] = runtime
-        params["r"] = 2
+        params["r"] = 10
 
         handle = f"/dev/nvme{device_info['os']}"
         if io_mechanism == "io_uring_cmd":

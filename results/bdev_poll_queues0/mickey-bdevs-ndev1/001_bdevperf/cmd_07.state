@@ -1,0 +1,9 @@
+begin: 1667154755.6110804
+cmd: /root/git/spdk/test/bdev/bdevperf/bdevperf --json /root/bdevconfs/bdev_uring_io_uring_1.conf
+  -q 128 -o 512 -w randread -t 10 -m '[0]'
+cwd: None
+elapsed: 10.920652627944946
+end: 1667154766.531733
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf/cmd_07.output

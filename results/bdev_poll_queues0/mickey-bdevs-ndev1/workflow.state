@@ -1,0 +1,87 @@
+config: {}
+doc: "Produce, transform and plot fio-output\n======================================\n\
+  \nThis workflow assumes that the 'prep.workflow' has completed.\nThe comparison\
+  \ and plots consists of\n\n  * bandwidth in KiB / seconds\n  * latency is mean and\
+  \ in nano-seconds\n  * IOPS are 'raw' / base-unit\n\nThe above in a bar-plot at\
+  \ iodepth=1, and a line-plot as a function of iodepth.\n\nSee Artifacts for the\
+  \ generated plots"
+status:
+  elapsed: 451.1689066886902
+  failed: 0
+  passed: 4
+  skipped: 0
+  started: 1667154689.7016044
+steps:
+- description: "\n    Run fio...\n"
+  id: 001_bdevperf
+  name: bdevperf
+  nr: 1
+  status:
+    elapsed: 109.93422937393188
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: bdevperf
+  with:
+    bdev_confs: /root/bdevconfs
+    iodepths:
+    - 1
+    - 128
+    iosizes:
+    - '512'
+    ndevices: 1
+    repetitions: 1
+- description: "\n    Extract and transform fio and bdevperf output\n    =============================================\n\
+    \n    fio has:\n\n    * bandwidth in KiB / second\n    * latency is mean and in\
+    \ nano-seconds\n    * IOPS are 'raw' / base-unit\n\n    bdevperf has:\n\n    *\
+    \ bandwidth in MiB / second\n    * IOPS are 'raw' / base-unit\n\n    NOTE: The\
+    \ metric-context need addition of backend-options, the options are\n    semi-encoded\
+    \ by ioengine and 'label', however, that is not very precise.\n"
+  id: 002_plot_bdevperf
+  name: plot_bdevperf
+  nr: 2
+  status:
+    elapsed: 0.8885126113891602
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: plot
+  with:
+    path: cijoe-output
+    plot_attributes: plot-attributes-512.yaml
+    tool: bdevperf
+- description: "\n    Run fio...\n"
+  id: 003_fio
+  name: fio
+  nr: 3
+  status:
+    elapsed: 339.5224390029907
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: fioe
+  with:
+    iodepths:
+    - 1
+    - 128
+    iosizes:
+    - '512'
+    repetitions: 1
+- description: "\n    Run fio...\n"
+  id: 004_plot_fio
+  name: plot_fio
+  nr: 4
+  status:
+    elapsed: 0.823725700378418
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: plot
+  with:
+    path: cijoe-output
+    plot_attributes: plot-attributes-512.yaml
+    tool: fio

@@ -1,0 +1,12 @@
+begin: 1667155028.0176528
+cmd: /opt/fio/bin/fio --name="io_uring-bdev_uring" --rw="randread" --size="12G" --iodepth="128"
+  --bs="512" --direct="1" --thread="1" --time_based="1" --runtime="7" --ramp_time="3"
+  --norandommap="1" --allow_file_create="0" --ioengine="spdk_bdev" --spdk_conf="/tmp/spdk_bdev_uring_foo.conf"
+  --filename="Nvme0n1" --output-format="normal,json" --output="/tmp/fio-output_512_128_io_uring-bdev_uring_0.txt"
+  --cpus_allowed="1"
+cwd: None
+elapsed: 11.259038209915161
+end: 1667155039.276691
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_50.output

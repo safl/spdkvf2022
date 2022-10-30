@@ -1,0 +1,8 @@
+begin: 1667155124.778188
+cmd: cat /tmp/fio-output_512_128_libaio-xnvme_0.txt
+cwd: None
+elapsed: 0.7813308238983154
+end: 1667155125.5595188
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_69.output

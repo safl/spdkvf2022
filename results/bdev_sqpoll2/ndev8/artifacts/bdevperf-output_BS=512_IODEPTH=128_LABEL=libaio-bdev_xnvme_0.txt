@@ -1,0 +1,25 @@
+Running I/O for 10 seconds...
+ Job: bdev_xnvme_libaio_device0n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device0n1:   90179.04 IOPS      44.03 MiB/s
+ Job: bdev_xnvme_libaio_device1n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device1n1:   90178.98 IOPS      44.03 MiB/s
+ Job: bdev_xnvme_libaio_device2n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device2n1:   90178.92 IOPS      44.03 MiB/s
+ Job: bdev_xnvme_libaio_device3n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device3n1:   90178.87 IOPS      44.03 MiB/s
+ Job: bdev_xnvme_libaio_device4n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device4n1:   90178.82 IOPS      44.03 MiB/s
+ Job: bdev_xnvme_libaio_device5n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device5n1:   90178.77 IOPS      44.03 MiB/s
+ Job: bdev_xnvme_libaio_device6n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device6n1:   90723.11 IOPS      44.30 MiB/s
+ Job: bdev_xnvme_libaio_device7n1 (Core Mask 0x1)
+	 bdev_xnvme_libaio_device7n1:   90178.68 IOPS      44.03 MiB/s
+ =============================================================
+ Total                       :  721975.18 IOPS     352.53 MiB/s
+[2022-10-31 00:45:15.263301] Starting SPDK v23.01-pre git sha1 fd41a2937 / DPDK 22.07.0 initialization...
+[2022-10-31 00:45:15.263331] [ DPDK EAL parameters: [2022-10-31 00:45:15.263335] bdevperf [2022-10-31 00:45:15.263337] --no-shconf [2022-10-31 00:45:15.263340] -l 0 [2022-10-31 00:45:15.263342] --huge-unlink [2022-10-31 00:45:15.263345] --log-level=lib.eal:6 [2022-10-31 00:45:15.263347] --log-level=lib.cryptodev:5 [2022-10-31 00:45:15.263349] --log-level=user1:6 [2022-10-31 00:45:15.263352] --iova-mode=pa [2022-10-31 00:45:15.263354] --base-virtaddr=0x200000000000 [2022-10-31 00:45:15.263356] --match-allocations [2022-10-31 00:45:15.263358] --file-prefix=spdk_pid60650 [2022-10-31 00:45:15.263361] ]
+TELEMETRY: No legacy callbacks, legacy socket not created
+[2022-10-31 00:45:15.273315] app.c: 586:spdk_app_start: *NOTICE*: Total cores available: 1
+[2022-10-31 00:45:15.308604] reactor.c: 926:reactor_run: *NOTICE*: Reactor started on core 0
+[2022-10-31 00:45:15.308954] accel_sw.c: 461:sw_accel_module_init: *NOTICE*: Accel framework software module initialized.

@@ -68,7 +68,7 @@ def worklet_entry(args, cijoe, step):
             env = {}
             if "io_uring_cmd" in label:
                 env["XNVME_QUEUE_SQPOLL_AWQ"] = "1"
-                env["XNVME_QUEUE_SQPOLL_CPU"] = "1"
+                env["XNVME_QUEUE_SQPOLL_CPU"] = "2"
                 cores = "[0]"
             else:
                 cores = "[0,1]"

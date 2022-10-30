@@ -313,7 +313,7 @@ def lineplot(args, cijoe, step):
 
         plt.xlabel(x)
         plt.ylabel(y)
-        plt.legend(bbox_to_anchor=(0, 0.98, 1, 0.2), loc="lower left", ncol=2)
+        plt.legend(bbox_to_anchor=(0, 0.95, 1, 0.2), loc="lower left", ncol=2, facecolor='white', framealpha=1)
         plt.ylim(plot_attributes["limits"]["lineplot"]["y_lim"])
 
         os.makedirs(args.output / "artifacts", exist_ok=True)
@@ -397,7 +397,8 @@ def barplot(args, cijoe, step):
         plt.xlabel(f"{x}={xval}")
         plt.ylabel(y)
         plt.legend(
-            plots, labels, bbox_to_anchor=(0, 0.98, 1, 0.2), loc="lower left", ncol=2
+            plots, labels, bbox_to_anchor=(0, 0.95, 1, 0.2), loc="lower left",
+            ncol=2, facecolor='white', framealpha=1
         )
         plt.ylim(plot_attributes["limits"]["barplot"]["y_lim"])
 

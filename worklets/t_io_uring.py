@@ -31,6 +31,9 @@ def worklet_entry(args, cijoe, step):
     mode = step.get("with", {}).get("mode", "default")
     io_mechanism = step.get("with", {}).get("io_mechanism", "io_uring")
     runtime = str(step.get("with", {}).get("runtime", 10))
+    t_io_uring_bin = step.get("with", {}).get("bin", "/opt/t_io_uring/io_uring")
+
+    #str(Path(fio_repos) / "t" / "io_uring")
 
     fio_repos = (
         cijoe.config.options.get("fio", {}).get("repository", {}).get("path", None)
@@ -52,6 +55,7 @@ def worklet_entry(args, cijoe, step):
 
         handles.append(handle)
 
+        taskset = "taskset -c 0,1"
         if mode == "default":  # Default: n threads for n devices
             params["n"] = len(handles)
         elif mode == "tweak_n1":  # Tweak: 1 thread for n devices
@@ -62,11 +66,16 @@ def worklet_entry(args, cijoe, step):
             params["n"] = "2"
             params["c"] = "16"
             params["s"] = "16"
+        elif mode == "tweak_n1_sqpoll":
+            params["n"] = "1"
+            params["c"] = "16"
+            params["s"] = "16"
+            taskset = "taskset -c 0"
 
         cmd = " ".join(
             [
-                "taskset -c 0,1",
-                str(Path(fio_repos) / "t" / "io_uring"),
+                taskset,
+                t_io_uring_bin,
                 " ".join([f"-{k}{v}" for k, v in params.items()]),
                 " ".join(handles),
             ]

@@ -1,0 +1,8 @@
+begin: 1667118997.126171
+cmd: 'echo "mode(default), #ndevices(1), best of three(1.17) "'
+cwd: None
+elapsed: 0.8262784481048584
+end: 1667118997.9524496
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_block_default
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_block_default/cmd_04.output

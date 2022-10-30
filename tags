@@ -12,7 +12,6 @@ IOPATHS	misc/bdevconfs.py	/^IOPATHS = {$/;"	v
 JSON_DUMP	worklets/plot.py	/^JSON_DUMP = {"indent": 4}$/;"	v
 LINE_REGEX	worklets/plot.py	/^LINE_REGEX = r".*Total\\s+\\:\\s+(?P<iops>\\d+\\.\\d+)\\s+IOPS\\s+(?P<bwps>\\d+\\.\\d+)\\sMiB\\\/s.*"$/;"	v
 PARAMS_DEFAULT	worklets/t_io_uring.py	/^PARAMS_DEFAULT = {$/;"	v
-SYSTEMS	misc/bdevconfs.py	/^SYSTEMS = {$/;"	v
 barplot	worklets/plot.py	/^def barplot(args, cijoe, step):$/;"	f
 contextualize	worklets/plot.py	/^    def contextualize(fio_output: dict, stem) -> dict:$/;"	f	function:normalize
 data_as_a_function_of	worklets/plot.py	/^def data_as_a_function_of(data, x="iodepth", y="iops"):$/;"	f
@@ -20,7 +19,6 @@ data_as_fixed	worklets/plot.py	/^def data_as_fixed(data, x="iodepth", y="iops", 
 extract	worklets/plot.py	/^def extract(args, cijoe, step):$/;"	f
 extract_bdevperf	worklets/plot.py	/^def extract_bdevperf(args, cijoe, step):$/;"	f
 gen_bdev_confs	misc/bdevconfs.py	/^def gen_bdev_confs(args):$/;"	f
-gen_commands	misc/bdevconfs.py	/^def gen_commands(args):$/;"	f
 lineplot	worklets/plot.py	/^def lineplot(args, cijoe, step):$/;"	f
 main	misc/bdevconfs.py	/^def main():$/;"	f
 normalize	worklets/plot.py	/^def normalize(args, cijoe, step):$/;"	f

@@ -1,0 +1,10 @@
+begin: 1667120748.2125986
+cmd: taskset -c 0,1 /opt/t_io_uring/io_uring -d128 -s32 -c32 -b512 -p1 -B1 -D0 -F1
+  -n1 -O0 -N0 -t0 -T0 -r10 -R1 -a0 -S0 -X0 -P0 -u1 /dev/ng0n1 /dev/ng1n1 /dev/ng2n1
+  /dev/ng3n1 /dev/ng4n1
+cwd: None
+elapsed: 11.051901578903198
+end: 1667120759.2645001
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/007_chard_thread1
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/007_chard_thread1/cmd_19.output

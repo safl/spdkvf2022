@@ -1,0 +1,8 @@
+begin: 1667120895.3578126
+cmd: 'echo "mode(tweak_n2), #ndevices(1), best of three(1.16) "'
+cwd: None
+elapsed: 0.8325834274291992
+end: 1667120896.190396
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/008_chard_thread2
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/008_chard_thread2/cmd_04.output

@@ -71,6 +71,16 @@ def worklet_entry(args, cijoe, step):
             params["c"] = "16"
             params["s"] = "16"
             taskset = "taskset -c 0"
+        elif mode == "tweak_n2_nopoll":
+            params["n"] = "2"
+            params["c"] = "16"
+            params["s"] = "16"
+            params["p"] = "0"
+        elif mode == "tweak_n2_nopnob":
+            params["n"] = "2"
+            params["c"] = "1"
+            params["s"] = "1"
+            params["p"] = "0"
 
         cmd = " ".join(
             [

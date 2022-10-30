@@ -1,0 +1,19 @@
+submitter=0, tid=46306, file=/dev/ng0n1, node=-1
+submitter=1, tid=46307, file=/dev/ng1n1, node=-1
+submitter=2, tid=46308, file=/dev/ng2n1, node=-1
+submitter=3, tid=46309, file=/dev/ng3n1, node=-1
+submitter=4, tid=46310, file=/dev/ng4n1, node=-1
+submitter=5, tid=46311, file=/dev/ng5n1, node=-1
+polled=1, fixedbufs=1/0, register_files=1, buffered=1, QD=128
+Engine=io_uring, sq_ring=128, cq_ring=128
+IOPS=1.96M, BW=957MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=988MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=989MiB/s, IOS/call=31/31
+IOPS=2.02M, BW=988MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=990MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=990MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=989MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=991MiB/s, IOS/call=31/31
+IOPS=2.03M, BW=990MiB/s, IOS/call=31/31
+Exiting on timeout
+Maximum IOPS=2.03M

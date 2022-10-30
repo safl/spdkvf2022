@@ -1,0 +1,14 @@
+submitter=0, tid=46101, file=/dev/ng7n1, node=-1
+polled=1, fixedbufs=1/0, register_files=1, buffered=1, QD=128
+Engine=io_uring, sq_ring=128, cq_ring=128
+IOPS=2.27M, BW=1108MiB/s, IOS/call=-1/-1
+IOPS=2.15M, BW=1051MiB/s, IOS/call=-1/-1
+IOPS=2.15M, BW=1050MiB/s, IOS/call=-1/-1
+IOPS=2.15M, BW=1049MiB/s, IOS/call=-1/-1
+IOPS=2.15M, BW=1051MiB/s, IOS/call=-1/-1
+IOPS=2.35M, BW=1149MiB/s, IOS/call=-1/-1
+IOPS=2.36M, BW=1154MiB/s, IOS/call=-1/-1
+IOPS=2.36M, BW=1153MiB/s, IOS/call=-1/-1
+IOPS=2.36M, BW=1153MiB/s, IOS/call=-1/-1
+Exiting on timeout
+Maximum IOPS=2.36M

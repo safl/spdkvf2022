@@ -1,0 +1,8 @@
+begin: 1667142880.7544
+cmd: 'echo "mode(tweak_n1_sqpoll), #ndevices(5), best of three(2.43) "'
+cwd: None
+elapsed: 0.7613067626953125
+end: 1667142881.5157068
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_block_n1_sqpoll
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_block_n1_sqpoll/cmd_20.output

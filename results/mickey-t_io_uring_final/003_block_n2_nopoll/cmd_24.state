@@ -1,0 +1,8 @@
+begin: 1667142383.9490364
+cmd: 'echo "mode(tweak_n2_nopoll), #ndevices(6), best of three(1.69) "'
+cwd: None
+elapsed: 0.7749319076538086
+end: 1667142384.7239683
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_block_n2_nopoll
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_block_n2_nopoll/cmd_24.output

@@ -1,0 +1,8 @@
+begin: 1667144009.7599869
+cmd: 'echo "mode(tweak_n2_nopnob), #ndevices(7), best of three(1.38) "'
+cwd: None
+elapsed: 0.7689216136932373
+end: 1667144010.5289085
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/009_chard_n2_nopnob
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/009_chard_n2_nopnob/cmd_28.output

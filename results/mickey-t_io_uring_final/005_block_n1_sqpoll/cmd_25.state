@@ -1,0 +1,10 @@
+begin: 1667142914.775667
+cmd: taskset -c 0 /opt/t_io_uring/io_uring_sqpoll -d128 -s16 -c16 -b512 -p1 -B1 -D0
+  -F1 -n1 -O0 -N0 -t0 -T0 -r10 -R1 -a0 -S0 -X0 -P0 -u1 /dev/ng0n1 /dev/ng1n1 /dev/ng2n1
+  /dev/ng3n1 /dev/ng4n1 /dev/ng5n1 /dev/ng6n1
+cwd: None
+elapsed: 10.825358152389526
+end: 1667142925.601025
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/005_block_n1_sqpoll
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/005_block_n1_sqpoll/cmd_25.output

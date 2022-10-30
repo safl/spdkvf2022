@@ -1,0 +1,159 @@
+config: {}
+doc: Run the one-core-peak.sh and variations
+status:
+  elapsed: 2653.06663441658
+  failed: 0
+  passed: 10
+  skipped: 0
+  started: 1667141656.4040077
+steps:
+- description: Undocumented
+  id: 001_block_default
+  name: block_default
+  nr: 1
+  status:
+    elapsed: 264.86856603622437
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring
+    mode: default
+- description: Undocumented
+  id: 002_block_n2batch
+  name: block_n2batch
+  nr: 2
+  status:
+    elapsed: 264.8437888622284
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring
+    mode: tweak_n2_batch
+- description: Undocumented
+  id: 003_block_n2_nopoll
+  name: block_n2_nopoll
+  nr: 3
+  status:
+    elapsed: 264.72839879989624
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring
+    mode: tweak_n2_nopoll
+- description: Undocumented
+  id: 004_block_n2_nopnob
+  name: block_n2_nopnob
+  nr: 4
+  status:
+    elapsed: 264.7938623428345
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring
+    mode: tweak_n2_nopnob
+- description: Undocumented
+  id: 005_block_n1_sqpoll
+  name: block_n1_sqpoll
+  nr: 5
+  status:
+    elapsed: 265.61523175239563
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring_sqpoll
+    io_mechanism: io_uring_cmd
+    mode: tweak_n1_sqpoll
+- description: Undocumented
+  id: 006_chard_default
+  name: chard_default
+  nr: 6
+  status:
+    elapsed: 265.656489610672
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring_cmd
+    mode: default
+- description: Undocumented
+  id: 007_chard_n2batch
+  name: chard_n2batch
+  nr: 7
+  status:
+    elapsed: 265.5649325847626
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring_cmd
+    mode: tweak_n2_batch
+- description: Undocumented
+  id: 008_chard_n2_nopoll
+  name: chard_n2_nopoll
+  nr: 8
+  status:
+    elapsed: 265.65169763565063
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring_cmd
+    mode: tweak_n2_nopoll
+- description: Undocumented
+  id: 009_chard_n2_nopnob
+  name: chard_n2_nopnob
+  nr: 9
+  status:
+    elapsed: 265.5725884437561
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring
+    io_mechanism: io_uring_cmd
+    mode: tweak_n2_nopnob
+- description: Undocumented
+  id: 010_chard_n1_sqpoll
+  name: chard_n1_sqpoll
+  nr: 10
+  status:
+    elapsed: 265.7710783481598
+    failed: 0
+    passed: 1
+    skipped: 0
+    started: 0.0
+  uses: t_io_uring
+  with:
+    bin: /opt/t_io_uring/io_uring_sqpoll
+    io_mechanism: io_uring_cmd
+    mode: tweak_n1_sqpoll

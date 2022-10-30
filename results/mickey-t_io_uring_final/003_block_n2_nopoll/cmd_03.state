@@ -1,0 +1,9 @@
+begin: 1667142207.6943977
+cmd: taskset -c 0,1 /opt/t_io_uring/io_uring -d128 -s16 -c16 -b512 -p0 -B1 -D0 -F1
+  -n2 -O1 -N0 -t0 -T0 -r10 -R1 -a0 -S0 -X0 -P0 -u0 /dev/nvme0n1
+cwd: None
+elapsed: 10.756899356842041
+end: 1667142218.451297
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_block_n2_nopoll
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_block_n2_nopoll/cmd_03.output

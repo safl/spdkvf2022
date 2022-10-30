@@ -1,0 +1,25 @@
+Running I/O for 10 seconds...
+ Job: bdev_uring_io_uring_device0n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device0n1:   66473.79 IOPS      32.46 MiB/s
+ Job: bdev_uring_io_uring_device1n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device1n1:   68618.08 IOPS      33.50 MiB/s
+ Job: bdev_uring_io_uring_device2n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device2n1:   65280.76 IOPS      31.88 MiB/s
+ Job: bdev_uring_io_uring_device3n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device3n1:   65952.26 IOPS      32.20 MiB/s
+ Job: bdev_uring_io_uring_device4n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device4n1:   61028.93 IOPS      29.80 MiB/s
+ Job: bdev_uring_io_uring_device5n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device5n1:   60086.44 IOPS      29.34 MiB/s
+ Job: bdev_uring_io_uring_device6n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device6n1:   59380.94 IOPS      28.99 MiB/s
+ Job: bdev_uring_io_uring_device7n1 (Core Mask 0x1)
+	 bdev_uring_io_uring_device7n1:   60239.23 IOPS      29.41 MiB/s
+ =============================================================
+ Total                       :  507060.42 IOPS     247.59 MiB/s
+[2022-10-30 21:13:10.795580] Starting SPDK v23.01-pre git sha1 fd41a2937 / DPDK 22.07.0 initialization...
+[2022-10-30 21:13:10.795615] [ DPDK EAL parameters: [2022-10-30 21:13:10.795620] bdevperf [2022-10-30 21:13:10.795623] --no-shconf [2022-10-30 21:13:10.795626] -l 0 [2022-10-30 21:13:10.795629] --huge-unlink [2022-10-30 21:13:10.795632] --log-level=lib.eal:6 [2022-10-30 21:13:10.795635] --log-level=lib.cryptodev:5 [2022-10-30 21:13:10.795637] --log-level=user1:6 [2022-10-30 21:13:10.795640] --iova-mode=pa [2022-10-30 21:13:10.795643] --base-virtaddr=0x200000000000 [2022-10-30 21:13:10.795646] --match-allocations [2022-10-30 21:13:10.795649] --file-prefix=spdk_pid54211 [2022-10-30 21:13:10.795652] ]
+TELEMETRY: No legacy callbacks, legacy socket not created
+[2022-10-30 21:13:10.805648] app.c: 586:spdk_app_start: *NOTICE*: Total cores available: 1
+[2022-10-30 21:13:10.852614] reactor.c: 926:reactor_run: *NOTICE*: Reactor started on core 0
+[2022-10-30 21:13:10.852968] accel_sw.c: 461:sw_accel_module_init: *NOTICE*: Accel framework software module initialized.

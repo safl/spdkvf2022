@@ -1,0 +1,9 @@
+begin: 1667147111.3025243
+cmd: /root/git/spdk/test/bdev/bdevperf/bdevperf --json /root/bdevconfs/bdev_aio_libaio_1.conf
+  -q 128 -o 512 -w randread -t 10 -m '[0]'
+cwd: None
+elapsed: 10.965522289276123
+end: 1667147122.2680466
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/001_bdevperf/cmd_09.output

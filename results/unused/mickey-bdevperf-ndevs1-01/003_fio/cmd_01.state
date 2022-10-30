@@ -1,0 +1,8 @@
+begin: 1667147134.0922883
+cmd: rm /tmp/fio-output_512_1_io_uring_cmd-reference_0.txt
+cwd: None
+elapsed: 0.7652173042297363
+end: 1667147134.8575056
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_01.output

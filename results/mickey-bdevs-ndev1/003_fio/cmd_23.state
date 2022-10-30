@@ -1,0 +1,12 @@
+begin: 1667154233.7914836
+cmd: /opt/fio/bin/fio --name="libaio-reference" --rw="randread" --size="12G" --iodepth="1"
+  --bs="512" --direct="1" --thread="1" --time_based="1" --runtime="7" --ramp_time="3"
+  --norandommap="1" --allow_file_create="0" --ioengine="libaio" --filename="/dev/nvme0n1"
+  --output-format="normal,json" --output="/tmp/fio-output_512_1_libaio-reference_0.txt"
+  --cpus_allowed="1"
+cwd: None
+elapsed: 11.052316188812256
+end: 1667154244.8437998
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_23.output

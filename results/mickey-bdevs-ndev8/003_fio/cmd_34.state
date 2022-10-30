@@ -1,0 +1,8 @@
+begin: 1667153756.3078
+cmd: rm /tmp/fio-output_512_1_ioctl-xnvme_0.txt
+cwd: None
+elapsed: 0.759331226348877
+end: 1667153757.0671313
+err: 0
+output_dpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio
+output_fpath: /home/safl/git/spdkvf2022/cijoe-output/003_fio/cmd_34.output

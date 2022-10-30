@@ -1,0 +1,524 @@
+[
+    [
+        "1c30b2a731dc623d93619c9c86de324f",
+        {
+            "ctx": {
+                "name": "libaio-reference",
+                "timestamp": 1667184425,
+                "ioengine": "libaio",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_1_libaio-reference_0"
+            },
+            "iops": 93547.692308,
+            "bwps": 47896339.692544,
+            "lat": 10501.830104,
+            "stddev": 155.70276
+        }
+    ],
+    [
+        "0cce8af1406ff5fe2c7be6bd5d5c2068",
+        {
+            "ctx": {
+                "name": "io_uring-bdev_uring",
+                "timestamp": 1667184553,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_128_io_uring-bdev_uring_0",
+                "spdk_conf": "/tmp/spdk_bdev_uring_foo.conf"
+            },
+            "iops": 824727.642857,
+            "bwps": 422260516.571136,
+            "lat": 126025.724676,
+            "stddev": 50443.062674
+        }
+    ],
+    [
+        "39a19fb2a091a389a67ad510ec234644",
+        {
+            "ctx": {
+                "name": "io_uring-xnvme",
+                "timestamp": 1667184411,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_1_io_uring-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "io_uring",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 92954.0,
+            "bwps": 47592374.856704,
+            "lat": 10570.167959,
+            "stddev": 234.944811
+        }
+    ],
+    [
+        "94ff03cefefb09e55257a3dfa9f61602",
+        {
+            "ctx": {
+                "name": "libaio-xnvme",
+                "timestamp": 1667184469,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_1_libaio-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "libaio",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 92037.642857,
+            "bwps": 47123236.571136,
+            "lat": 10676.771369,
+            "stddev": 142.436937
+        }
+    ],
+    [
+        "94ff03cefefb09e55257a3dfa9f61602",
+        {
+            "ctx": {
+                "name": "libaio-xnvme",
+                "timestamp": 1667184638,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_128_libaio-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "libaio",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 536343.928571,
+            "bwps": 274608054.856704,
+            "lat": 238525.458243,
+            "stddev": 1873.240622
+        }
+    ],
+    [
+        "0cce8af1406ff5fe2c7be6bd5d5c2068",
+        {
+            "ctx": {
+                "name": "io_uring-bdev_uring",
+                "timestamp": 1667184383,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_1_io_uring-bdev_uring_0",
+                "spdk_conf": "/tmp/spdk_bdev_uring_foo.conf"
+            },
+            "iops": 101831.214286,
+            "bwps": 52137472.0,
+            "lat": 9670.771039,
+            "stddev": 138.541864
+        }
+    ],
+    [
+        "e1759dc3423e6538ebe941bd4da423bd",
+        {
+            "ctx": {
+                "name": "libaio-bdev_aio",
+                "timestamp": 1667184440,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_1_libaio-bdev_aio_0",
+                "spdk_conf": "/tmp/spdk_bdev_aio_foo.conf"
+            },
+            "iops": 102652.928571,
+            "bwps": 52558189.714432,
+            "lat": 9592.367899,
+            "stddev": 140.883605
+        }
+    ],
+    [
+        "1def04da88e163fba7ef585a56ccf69c",
+        {
+            "ctx": {
+                "name": "ioctl-xnvme",
+                "timestamp": 1667184652,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/ng0n1",
+                "stem": "fio-output_512_128_ioctl-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "thrpool",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 231108.714286,
+            "bwps": 118327661.714432,
+            "lat": 553767.592067,
+            "stddev": 3991.224293
+        }
+    ],
+    [
+        "e2ae47159c0a4a408ac655f7360a18a1",
+        {
+            "ctx": {
+                "name": "io_uring_cmd-bdev_xnvme",
+                "timestamp": 1667184524,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_128_io_uring_cmd-bdev_xnvme_0",
+                "spdk_conf": "/tmp/spdk_bdev_xnvme_io_uring_cmd.conf"
+            },
+            "iops": 1131434.214286,
+            "bwps": 579294134.856704,
+            "lat": 112388.731565,
+            "stddev": 3525.658629
+        }
+    ],
+    [
+        "d04c684f79db154c0ed37c1bac184b33",
+        {
+            "ctx": {
+                "name": "io_uring_cmd-reference",
+                "timestamp": 1667184326,
+                "ioengine": "io_uring_cmd",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/ng0n1",
+                "stem": "fio-output_512_1_io_uring_cmd-reference_0"
+            },
+            "iops": 93942.928571,
+            "bwps": 48098742.856704,
+            "lat": 10443.370579,
+            "stddev": 211.646348
+        }
+    ],
+    [
+        "d04c684f79db154c0ed37c1bac184b33",
+        {
+            "ctx": {
+                "name": "io_uring_cmd-reference",
+                "timestamp": 1667184496,
+                "ioengine": "io_uring_cmd",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/ng0n1",
+                "stem": "fio-output_512_128_io_uring_cmd-reference_0"
+            },
+            "iops": 684270.357143,
+            "bwps": 350346386.285568,
+            "lat": 186884.213944,
+            "stddev": 1746.538501
+        }
+    ],
+    [
+        "411d30eddf7004fffcd363e8b4b33708",
+        {
+            "ctx": {
+                "name": "io_uring-reference",
+                "timestamp": 1667184538,
+                "ioengine": "io_uring",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_128_io_uring-reference_0"
+            },
+            "iops": 667852.769231,
+            "bwps": 341940460.307456,
+            "lat": 191510.729394,
+            "stddev": 1467.717908
+        }
+    ],
+    [
+        "bb497d5641b7a0197af2605959e44e4b",
+        {
+            "ctx": {
+                "name": "io_uring_cmd-xnvme",
+                "timestamp": 1667184340,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/ng0n1",
+                "stem": "fio-output_512_1_io_uring_cmd-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "io_uring_cmd",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 93660.714286,
+            "bwps": 47954212.571136,
+            "lat": 10490.348809,
+            "stddev": 215.807667
+        }
+    ],
+    [
+        "39a19fb2a091a389a67ad510ec234644",
+        {
+            "ctx": {
+                "name": "io_uring-xnvme",
+                "timestamp": 1667184581,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_128_io_uring-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "io_uring",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 599147.0,
+            "bwps": 306763190.856704,
+            "lat": 213381.780001,
+            "stddev": 1548.307785
+        }
+    ],
+    [
+        "1def04da88e163fba7ef585a56ccf69c",
+        {
+            "ctx": {
+                "name": "ioctl-xnvme",
+                "timestamp": 1667184482,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/ng0n1",
+                "stem": "fio-output_512_1_ioctl-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "thrpool",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 79326.285714,
+            "bwps": 40615058.285568,
+            "lat": 12438.168181,
+            "stddev": 807.551121
+        }
+    ],
+    [
+        "1c30b2a731dc623d93619c9c86de324f",
+        {
+            "ctx": {
+                "name": "libaio-reference",
+                "timestamp": 1667184595,
+                "ioengine": "libaio",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_128_libaio-reference_0"
+            },
+            "iops": 552159.0,
+            "bwps": 282705368.614912,
+            "lat": 231639.922512,
+            "stddev": 1753.956666
+        }
+    ],
+    [
+        "fc30ee552d871caf383115d34ea50262",
+        {
+            "ctx": {
+                "name": "io_uring-bdev_xnvme",
+                "timestamp": 1667184568,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_128_io_uring-bdev_xnvme_0",
+                "spdk_conf": "/tmp/spdk_bdev_xnvme_io_uring.conf"
+            },
+            "iops": 596621.214286,
+            "bwps": 305470025.143296,
+            "lat": 214365.921461,
+            "stddev": 1767.061551
+        }
+    ],
+    [
+        "260dee33e92229c62907c721b874c4ee",
+        {
+            "ctx": {
+                "name": "libaio-bdev_xnvme",
+                "timestamp": 1667184625,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_128_libaio-bdev_xnvme_0",
+                "spdk_conf": "/tmp/spdk_bdev_xnvme_libaio.conf"
+            },
+            "iops": 596813.571429,
+            "bwps": 305568475.428864,
+            "lat": 113879.119416,
+            "stddev": 57377.211928
+        }
+    ],
+    [
+        "e2ae47159c0a4a408ac655f7360a18a1",
+        {
+            "ctx": {
+                "name": "io_uring_cmd-bdev_xnvme",
+                "timestamp": 1667184355,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_1_io_uring_cmd-bdev_xnvme_0",
+                "spdk_conf": "/tmp/spdk_bdev_xnvme_io_uring_cmd.conf"
+            },
+            "iops": 101579.785714,
+            "bwps": 52008740.571136,
+            "lat": 9716.998018,
+            "stddev": 156.548644
+        }
+    ],
+    [
+        "260dee33e92229c62907c721b874c4ee",
+        {
+            "ctx": {
+                "name": "libaio-bdev_xnvme",
+                "timestamp": 1667184455,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_1_libaio-bdev_xnvme_0",
+                "spdk_conf": "/tmp/spdk_bdev_xnvme_libaio.conf"
+            },
+            "iops": 100630.142857,
+            "bwps": 51522706.285568,
+            "lat": 9778.958858,
+            "stddev": 176.169944
+        }
+    ],
+    [
+        "bb497d5641b7a0197af2605959e44e4b",
+        {
+            "ctx": {
+                "name": "io_uring_cmd-xnvme",
+                "timestamp": 1667184510,
+                "ioengine": "external:/usr/local/lib/x86_64-linux-gnu/libxnvme-fio-engine.so",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "/dev/ng0n1",
+                "stem": "fio-output_512_128_io_uring_cmd-xnvme_0",
+                "xnvme_be": "linux",
+                "xnvme_async": "io_uring_cmd",
+                "xnvme_sync": "nvme",
+                "xnvme_admin": "nvme"
+            },
+            "iops": 624255.142857,
+            "bwps": 319618633.143296,
+            "lat": 204866.969584,
+            "stddev": 1542.20309
+        }
+    ],
+    [
+        "e1759dc3423e6538ebe941bd4da423bd",
+        {
+            "ctx": {
+                "name": "libaio-bdev_aio",
+                "timestamp": 1667184610,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "128",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_128_libaio-bdev_aio_0",
+                "spdk_conf": "/tmp/spdk_bdev_aio_foo.conf"
+            },
+            "iops": 605260.714286,
+            "bwps": 309893485.714432,
+            "lat": 111533.149261,
+            "stddev": 56661.38889
+        }
+    ],
+    [
+        "fc30ee552d871caf383115d34ea50262",
+        {
+            "ctx": {
+                "name": "io_uring-bdev_xnvme",
+                "timestamp": 1667184398,
+                "ioengine": "spdk_bdev",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "Nvme0n1",
+                "stem": "fio-output_512_1_io_uring-bdev_xnvme_0",
+                "spdk_conf": "/tmp/spdk_bdev_xnvme_io_uring.conf"
+            },
+            "iops": 103345.857143,
+            "bwps": 52913005.714432,
+            "lat": 9525.941982,
+            "stddev": 152.961991
+        }
+    ],
+    [
+        "411d30eddf7004fffcd363e8b4b33708",
+        {
+            "ctx": {
+                "name": "io_uring-reference",
+                "timestamp": 1667184368,
+                "ioengine": "io_uring",
+                "bs": "512",
+                "rw": "randread",
+                "size": "12G",
+                "iodepth": "1",
+                "filename": "/dev/nvme0n1",
+                "stem": "fio-output_512_1_io_uring-reference_0"
+            },
+            "iops": 93738.692308,
+            "bwps": 47994092.307456,
+            "lat": 10473.551377,
+            "stddev": 143.770463
+        }
+    ]
+]

@@ -1,0 +1,25 @@
+Running I/O for 10 seconds...
+ Job: bdev_aio_libaio_device0n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device0n1:   74305.26 IOPS      36.28 MiB/s
+ Job: bdev_aio_libaio_device1n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device1n1:   75423.05 IOPS      36.83 MiB/s
+ Job: bdev_aio_libaio_device2n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device2n1:   74012.93 IOPS      36.14 MiB/s
+ Job: bdev_aio_libaio_device3n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device3n1:   73540.25 IOPS      35.91 MiB/s
+ Job: bdev_aio_libaio_device4n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device4n1:   72156.45 IOPS      35.23 MiB/s
+ Job: bdev_aio_libaio_device5n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device5n1:   70466.17 IOPS      34.41 MiB/s
+ Job: bdev_aio_libaio_device6n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device6n1:   69468.84 IOPS      33.92 MiB/s
+ Job: bdev_aio_libaio_device7n1 (Core Mask 0x1)
+	 bdev_aio_libaio_device7n1:   69430.88 IOPS      33.90 MiB/s
+ =============================================================
+ Total                       :  578803.83 IOPS     282.62 MiB/s
+[2022-10-30 21:43:54.642850] Starting SPDK v23.01-pre git sha1 fd41a2937 / DPDK 22.07.0 initialization...
+[2022-10-30 21:43:54.642885] [ DPDK EAL parameters: [2022-10-30 21:43:54.642890] bdevperf [2022-10-30 21:43:54.642893] --no-shconf [2022-10-30 21:43:54.642896] -l 0 [2022-10-30 21:43:54.642899] --huge-unlink [2022-10-30 21:43:54.642902] --log-level=lib.eal:6 [2022-10-30 21:43:54.642904] --log-level=lib.cryptodev:5 [2022-10-30 21:43:54.642908] --log-level=user1:6 [2022-10-30 21:43:54.642911] --iova-mode=pa [2022-10-30 21:43:54.642913] --base-virtaddr=0x200000000000 [2022-10-30 21:43:54.642916] --match-allocations [2022-10-30 21:43:54.642919] --file-prefix=spdk_pid58135 [2022-10-30 21:43:54.642922] ]
+TELEMETRY: No legacy callbacks, legacy socket not created
+[2022-10-30 21:43:54.652737] app.c: 586:spdk_app_start: *NOTICE*: Total cores available: 1
+[2022-10-30 21:43:54.692593] reactor.c: 926:reactor_run: *NOTICE*: Reactor started on core 0
+[2022-10-30 21:43:54.692943] accel_sw.c: 461:sw_accel_module_init: *NOTICE*: Accel framework software module initialized.

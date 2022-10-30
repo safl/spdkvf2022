@@ -306,12 +306,14 @@ def lineplot(args, cijoe, step):
             color = plot_attributes["datasets"][samples["label"]]["color"]
             marker = plot_attributes["datasets"][samples["label"]]["marker"]
 
+            plot_label = plot_attributes["datasets"][samples["label"]]["legend"]
+
             xs, ys = [list(t) for t in zip(*sorted(zip(samples["xs"], samples["ys"])))]
-            plt.plot(xs, ys, label=samples["label"], color=color, marker=marker)
+            plt.plot(xs, ys, label=plot_label, color=color, marker=marker)
 
         plt.xlabel(x)
         plt.ylabel(y)
-        plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left", ncol=2)
+        plt.legend(bbox_to_anchor=(0, 0.98, 1, 0.2), loc="lower left", ncol=2)
         plt.ylim(plot_attributes["limits"]["lineplot"]["y_lim"])
 
         os.makedirs(args.output / "artifacts", exist_ok=True)
@@ -389,12 +391,13 @@ def barplot(args, cijoe, step):
             plt.text(index, mean + dist, f"{mean:.2f}", ha="center")
             bars.append(barplot)
             plots.append(barplot[0])
-            labels.append(samples["label"])
+            labels.append(plot_attributes["datasets"][samples["label"]]["legend"])
+            # labels.append(samples["label"])
 
         plt.xlabel(f"{x}={xval}")
         plt.ylabel(y)
         plt.legend(
-            plots, labels, bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left", ncol=2
+            plots, labels, bbox_to_anchor=(0, 0.98, 1, 0.2), loc="lower left", ncol=2
         )
         plt.ylim(plot_attributes["limits"]["barplot"]["y_lim"])
 

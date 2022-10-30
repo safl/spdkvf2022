@@ -33,7 +33,7 @@ def worklet_entry(args, cijoe, step):
     runtime = str(step.get("with", {}).get("runtime", 10))
     t_io_uring_bin = step.get("with", {}).get("bin", "/opt/t_io_uring/io_uring")
 
-    #str(Path(fio_repos) / "t" / "io_uring")
+    # str(Path(fio_repos) / "t" / "io_uring")
 
     fio_repos = (
         cijoe.config.options.get("fio", {}).get("repository", {}).get("path", None)
